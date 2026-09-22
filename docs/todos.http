@@ -2,7 +2,6 @@
 @baseUrl = http://127.0.0.1:3001
 
 ### Health
-# Read data without changing it using the shared API URL.
 GET {{baseUrl}}/api/health
 
 ### List all todos
@@ -11,9 +10,7 @@ GET {{baseUrl}}/api/todos
 
 ### Create a todo — run this before requests referencing createTodo
 # @name createTodo
-# Create a new task from the JSON body using the shared API URL.
 POST {{baseUrl}}/api/todos
-# Tell the server that the following body uses JSON; its fields are explained in CODE_GUIDE.md.
 Content-Type: application/json
 
 {
@@ -29,13 +26,11 @@ Content-Type: application/json
 GET {{baseUrl}}/api/todos/{{createTodo.response.body.$.todo.id}}
 
 ### Combine search and filters
-# Read data without changing it using the shared API URL.
 GET {{baseUrl}}/api/todos?q=launch&completed=false&priority=high&project=work&sort=dueDate
 
 ### Edit only selected fields
 # Change only the supplied fields on this task using the shared API URL.
 PATCH {{baseUrl}}/api/todos/{{createTodo.response.body.$.todo.id}}
-# Tell the server that the following body uses JSON; its fields are explained in CODE_GUIDE.md.
 Content-Type: application/json
 
 {
@@ -47,7 +42,6 @@ Content-Type: application/json
 ### Complete
 # Change only the supplied fields on this task using the shared API URL.
 PATCH {{baseUrl}}/api/todos/{{createTodo.response.body.$.todo.id}}
-# Tell the server that the following body uses JSON; its fields are explained in CODE_GUIDE.md.
 Content-Type: application/json
 
 {
@@ -57,7 +51,6 @@ Content-Type: application/json
 ### Reopen
 # Change only the supplied fields on this task using the shared API URL.
 PATCH {{baseUrl}}/api/todos/{{createTodo.response.body.$.todo.id}}
-# Tell the server that the following body uses JSON; its fields are explained in CODE_GUIDE.md.
 Content-Type: application/json
 
 {
@@ -67,7 +60,6 @@ Content-Type: application/json
 ### Clear the due date
 # Change only the supplied fields on this task using the shared API URL.
 PATCH {{baseUrl}}/api/todos/{{createTodo.response.body.$.todo.id}}
-# Tell the server that the following body uses JSON; its fields are explained in CODE_GUIDE.md.
 Content-Type: application/json
 
 {
@@ -79,7 +71,6 @@ Content-Type: application/json
 DELETE {{baseUrl}}/api/todos/{{createTodo.response.body.$.todo.id}}
 
 ### Validation: blank title returns 400
-# Create a new task from the JSON body using the shared API URL.
 POST {{baseUrl}}/api/todos
 # Tell the server that the following body uses JSON; its fields are explained in CODE_GUIDE.md.
 Content-Type: application/json
@@ -91,7 +82,6 @@ Content-Type: application/json
 ### Validation: nonexistent calendar date returns 400
 # Create a new task from the JSON body using the shared API URL.
 POST {{baseUrl}}/api/todos
-# Tell the server that the following body uses JSON; its fields are explained in CODE_GUIDE.md.
 Content-Type: application/json
 
 {
@@ -104,5 +94,4 @@ Content-Type: application/json
 GET {{baseUrl}}/api/todos?completed=maybe
 
 ### Missing record returns 404
-# Read data without changing it using the shared API URL.
 GET {{baseUrl}}/api/todos/00000000-0000-4000-8000-000000000000

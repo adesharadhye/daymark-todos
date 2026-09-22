@@ -1,6 +1,6 @@
 # Reading the commented source
 
-The handwritten TypeScript, React markup, SQL, CSS, HTML, SVG, CI workflow, environment example, ignore rules, and REST requests contain line-by-line explanations. Comments explain the purpose of statements, fields, controls, style declarations, and closing boundaries. The existing feature and API documentation remains prose rather than commented executable code.
+The handwritten TypeScript, React markup, SQL, CSS, HTML, SVG, CI workflow, environment example, ignore rules, and REST requests use short comments spaced roughly every 2–3 lines of code, adjusted to fit the surrounding syntax. Comments explain statements, fields, controls, and style declarations without annotating every line. The existing feature and API documentation remains prose rather than commented executable code.
 
 Generated files are deliberately excluded: `package-lock.json`, `node_modules/`, `dist/`, database files, browser reports, temporary files, and the pre-existing Python environment. The comments do not change application behavior.
 

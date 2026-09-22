@@ -1,20 +1,14 @@
 # Exclude installed packages, which npm recreates from the lockfile.
 node_modules/
-# Exclude generated production JavaScript, CSS, and HTML.
 dist/
-# Keep local SQLite database files out of source control and formatting.
 data/
 # Ignore the pre-existing Python environment; it is not part of this JavaScript app.
 venv/
-# Ignore another conventional Python environment directory.
 .venv/
-# Ignore temporary development scripts, screenshots, and isolated test databases.
 .local/
 # Exclude generated test coverage reports.
 coverage/
-# Exclude browser screenshots, traces, and other generated test artifacts.
 test-results/
-# Exclude generated browser-test reports.
 playwright-report/
 # Leave the npm-generated lockfile formatting under npm’s control.
 package-lock.json

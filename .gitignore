@@ -1,30 +1,20 @@
 # Exclude installed packages, which npm recreates from the lockfile.
 node_modules/
-# Exclude generated production JavaScript, CSS, and HTML.
 dist/
-# Keep local SQLite database files out of source control and formatting.
 data/
 # Keep local environment settings and potential secrets out of Git.
 .env
-# Ignore environment-specific variants of the local configuration.
 .env.*
-# Keep the safe example configuration in the repository.
 !.env.example
 # Exclude generated test coverage reports.
 coverage/
-# Exclude generated browser-test reports.
 playwright-report/
-# Exclude browser screenshots, traces, and other generated test artifacts.
 test-results/
 # Ignore the pre-existing Python environment; it is not part of this JavaScript app.
 venv/
-# Ignore another conventional Python environment directory.
 .venv/
-# Ignore generated log files.
 *.log
 # Ignore macOS Finder metadata.
 .DS_Store
-# Ignore Windows thumbnail-cache metadata.
 Thumbs.db
-# Ignore temporary development scripts, screenshots, and isolated test databases.
 .local/

@@ -1,4462 +1,2983 @@
 /* Style elements matching :root. */
 :root {
-  /* Choose the preferred typefaces and their fallbacks: Inter, 'Segoe UI', sans-serif. */
   font-family: Inter, 'Segoe UI', sans-serif;
-  /* Set the foreground text or icon color: #1f2937. */
   color: #1f2937;
   /* Set the background fill: #f5f5f2. */
   background: #f5f5f2;
-  /* Control whether the browser may synthesize missing font styles: none. */
   font-synthesis: none;
-  /* Define the reusable --bg design value as #f5f5f2. */
   --bg: #f5f5f2;
   /* Define the reusable --panel design value as #ffffff. */
   --panel: #ffffff;
-  /* Define the reusable --soft design value as #f0f0ec. */
   --soft: #f0f0ec;
-  /* Define the reusable --line design value as #e5e7eb. */
   --line: #e5e7eb;
   /* Define the reusable --text design value as #1f2937. */
   --text: #1f2937;
-  /* Define the reusable --muted design value as #6b7280. */
   --muted: #6b7280;
-  /* Define the reusable --primary design value as #2f6f4f. */
   --primary: #2f6f4f;
   /* Define the reusable --primary-strong design value as #255a40. */
   --primary-strong: #255a40;
-  /* Define the reusable --success design value as #2e7d32. */
   --success: #2e7d32;
-  /* Define the reusable --danger design value as #c2410c. */
   --danger: #c2410c;
   /* Define the reusable --shadow design value as 0 8px 24px rgba(17, 24, 39, 0.04). */
   --shadow: 0 8px 24px rgba(17, 24, 39, 0.04);
-  /* Finish this style rule or responsive block. */
 }
 
 * {
   /* Include padding and borders when calculating declared dimensions: border-box. */
   box-sizing: border-box;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching html. */
 html {
   /* Choose how in-page scrolling moves: smooth. */
   scroll-behavior: smooth;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching body. */
 body {
   /* Set space outside this element: 0. */
   margin: 0;
-  /* Prevent the element from shrinking below this width: 320px. */
   min-width: 320px;
-  /* Set the background fill: var(--bg). */
   background: var(--bg);
   /* Set the foreground text or icon color: var(--text). */
   color: var(--text);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Include button in this group of selectors. */
 button,
 /* Include input in this group of selectors. */
 input,
-/* Include textarea in this group of selectors. */
 textarea,
-/* Style elements matching select. */
 select {
   /* Set or inherit the combined font properties: inherit. */
   font: inherit;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Include button in this group of selectors. */
 button,
 /* Include a in this group of selectors. */
 a,
-/* Include input in this group of selectors. */
 input,
-/* Include select in this group of selectors. */
 select,
 /* Style elements matching textarea. */
 textarea {
-  /* Control the tap highlight in WebKit-based browsers: transparent. */
   -webkit-tap-highlight-color: transparent;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Include button in this group of selectors. */
 button,
-/* Style elements matching select. */
 select {
-  /* Choose the pointer appearance over this element: pointer. */
   cursor: pointer;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching button:disabled. */
 button:disabled {
-  /* Choose the pointer appearance over this element: not-allowed. */
   cursor: not-allowed;
-  /* Set the element transparency: 0.6. */
   opacity: 0.6;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching button. */
 button {
-  /* Define the border width, style, and color: 0. */
   border: 0;
-  /* Set space inside this element: 0. */
   padding: 0;
   /* Set the background fill: none. */
   background: none;
-  /* Set the foreground text or icon color: inherit. */
   color: inherit;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching a. */
 a {
-  /* Set the foreground text or icon color: inherit. */
   color: inherit;
-  /* Choose decorations such as underlines or completion strikethroughs: none. */
   text-decoration: none;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching svg. */
 svg {
-  /* Control whether this flex item can shrink: 0. */
   flex-shrink: 0;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Include h1 in this group of selectors. */
 h1,
-/* Include h2 in this group of selectors. */
 h2,
-/* Include h3 in this group of selectors. */
 h3,
 /* Include p in this group of selectors. */
 p,
-/* Include dl in this group of selectors. */
 dl,
-/* Include dd in this group of selectors. */
 dd,
 /* Include dt in this group of selectors. */
 dt,
-/* Style elements matching ul. */
 ul {
-  /* Set space outside this element: 0. */
   margin: 0;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Include input in this group of selectors. */
 input,
-/* Include textarea in this group of selectors. */
 textarea,
-/* Style elements matching select. */
 select {
   /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
-  /* Round the element corners: 10px. */
   border-radius: 10px;
-  /* Set the background fill: #fff. */
   background: #fff;
   /* Set space inside this element: 10px 12px. */
   padding: 10px 12px;
-  /* Set the foreground text or icon color: var(--text). */
   color: var(--text);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Include input:focus in this group of selectors. */
 input:focus,
-/* Include textarea:focus in this group of selectors. */
 textarea:focus,
-/* Style elements matching select:focus. */
 select:focus {
   /* Draw a focus outline without changing layout size: 2px solid rgba(47, 111, 79, 0.15). */
   outline: 2px solid rgba(47, 111, 79, 0.15);
-  /* Separate the focus outline from the element edge: 2px. */
   outline-offset: 2px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .capitalize. */
 .capitalize {
-  /* Change the displayed letter casing: capitalize. */
   text-transform: capitalize;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Include .sr-only in this group of selectors. */
 .sr-only,
-/* Style elements matching .skip-link:not(:focus). */
 .skip-link:not(:focus) {
-  /* Choose normal, relative, absolute, sticky, or fixed positioning: absolute. */
   position: absolute;
   /* Set the element width: 1px. */
   width: 1px;
-  /* Set the element height: 1px. */
   height: 1px;
-  /* Set space inside this element: 0. */
   padding: 0;
   /* Set space outside this element: -1px. */
   margin: -1px;
-  /* Control whether overflowing content is clipped, visible, or scrollable: hidden. */
   overflow: hidden;
-  /* Clip content to this region for the visually hidden utility: rect(0, 0, 0, 0). */
   clip: rect(0, 0, 0, 0);
   /* Control whitespace preservation and line wrapping: nowrap. */
   white-space: nowrap;
-  /* Define the border width, style, and color: 0. */
   border: 0;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .skip-link:focus. */
 .skip-link:focus {
-  /* Choose normal, relative, absolute, sticky, or fixed positioning: fixed. */
   position: fixed;
-  /* Set the top positioning offset: 16px. */
   top: 16px;
   /* Set the left positioning offset: 16px. */
   left: 16px;
-  /* Choose the stacking order of positioned elements: 100. */
   z-index: 100;
-  /* Set the background fill: #fff. */
   background: #fff;
   /* Set space inside this element: 10px 12px. */
   padding: 10px 12px;
-  /* Round the element corners: 8px. */
   border-radius: 8px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .app-shell. */
 .app-shell {
-  /* Reserve at least this much height: 100vh. */
   min-height: 100vh;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .simple-shell. */
 .simple-shell {
-  /* Limit how wide this element can grow: 1100px. */
   max-width: 1100px;
-  /* Set space outside this element: 0 auto. */
   margin: 0 auto;
   /* Set space inside this element: 24px 20px 40px. */
   padding: 24px 20px 40px;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .simple-header. */
 .simple-header {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
   /* Set the spacing between layout items: 16px. */
   gap: 16px;
-  /* Set space inside this element: 14px 18px. */
   padding: 14px 18px;
-  /* Set the background fill: rgba(255, 255, 255, 0.8). */
   background: rgba(255, 255, 255, 0.8);
   /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
-  /* Round the element corners: 16px. */
   border-radius: 16px;
-  /* Add the specified shadow: var(--shadow). */
   box-shadow: var(--shadow);
   /* Choose normal, relative, absolute, sticky, or fixed positioning: sticky. */
   position: sticky;
-  /* Set the top positioning offset: 12px. */
   top: 12px;
-  /* Choose the stacking order of positioned elements: 10. */
   z-index: 10;
   /* Filter the content visible behind this surface: blur(8px). */
   backdrop-filter: blur(8px);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .brand-row. */
 .brand-row {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .brand-inline. */
 .brand-inline {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Set the text weight: 700. */
   font-weight: 700;
-  /* Set the text size: 1.2rem. */
   font-size: 1.2rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .brand-inline svg. */
 .brand-inline svg {
-  /* Set the foreground text or icon color: var(--primary). */
   color: var(--primary);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .simple-nav. */
 .simple-nav {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Allow flex items to wrap onto another line: wrap. */
   flex-wrap: wrap;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .simple-nav a. */
 .simple-nav a {
-  /* Set space inside this element: 8px 12px. */
   padding: 8px 12px;
-  /* Round the element corners: 999px. */
   border-radius: 999px;
   /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text size: 0.92rem. */
   font-size: 0.92rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .simple-nav a.active. */
 .simple-nav a.active {
-  /* Set the background fill: #edf7f1. */
   background: #edf7f1;
-  /* Set the foreground text or icon color: var(--primary-strong). */
   color: var(--primary-strong);
   /* Set the text weight: 600. */
   font-weight: 600;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .header-actions. */
 .header-actions {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 10px. */
   gap: 10px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .button. */
 .button {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Distribute children along the main axis: center. */
   justify-content: center;
-  /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Round the element corners: 10px. */
   border-radius: 10px;
   /* Set space inside this element: 10px 14px. */
   padding: 10px 14px;
-  /* Set the text weight: 600. */
   font-weight: 600;
-  /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .button.primary. */
 .button.primary {
-  /* Set the background fill: var(--primary). */
   background: var(--primary);
-  /* Set the border color: var(--primary). */
   border-color: var(--primary);
   /* Set the foreground text or icon color: #fff. */
   color: #fff;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .button.primary:hover. */
 .button.primary:hover {
   /* Set the background fill: var(--primary-strong). */
   background: var(--primary-strong);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .button.secondary. */
 .button.secondary {
   /* Set the background fill: #fff. */
   background: #fff;
-  /* Set the foreground text or icon color: var(--text). */
   color: var(--text);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .button.danger. */
 .button.danger {
-  /* Set the background fill: var(--danger). */
   background: var(--danger);
-  /* Set the border color: var(--danger). */
   border-color: var(--danger);
   /* Set the foreground text or icon color: white. */
   color: white;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .simple-main. */
 .simple-main {
   /* Set inner space above the content: 28px. */
   padding-top: 28px;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .page-intro. */
 .page-intro {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: end. */
   align-items: end;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
   /* Set the spacing between layout items: 16px. */
   gap: 16px;
-  /* Set space inside this element: 8px 0 18px. */
   padding: 8px 0 18px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .eyebrow. */
 .eyebrow {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Set the text size: 0.72rem. */
   font-size: 0.72rem;
-  /* Adjust spacing between characters: 0.12em. */
   letter-spacing: 0.12em;
   /* Change the displayed letter casing: uppercase. */
   text-transform: uppercase;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .page-intro h1. */
 .page-intro h1 {
-  /* Set outer space above the element: 12px. */
   margin-top: 12px;
-  /* Set the text size: clamp(2.1rem, 4vw, 3.2rem). */
   font-size: clamp(2.1rem, 4vw, 3.2rem);
   /* Set the distance between lines of text: 1.1. */
   line-height: 1.1;
-  /* Adjust spacing between characters: -0.04em. */
   letter-spacing: -0.04em;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .page-intro h1 > span. */
 .page-intro h1 > span {
-  /* Set the foreground text or icon color: var(--primary). */
   color: var(--primary);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .page-intro p. */
 .page-intro p {
-  /* Set outer space above the element: 10px. */
   margin-top: 10px;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .add-main. */
 .add-main {
-  /* Set outer space above the element: 0. */
   margin-top: 0;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .overview. */
 .overview {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Define the widths of grid columns: repeat(3, minmax(0, 1fr)). */
   grid-template-columns: repeat(3, minmax(0, 1fr));
   /* Set the spacing between layout items: 16px. */
   gap: 16px;
-  /* Set outer space below the element: 28px. */
   margin-bottom: 28px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .stat-card. */
 .stat-card {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
   /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Set space inside this element: 18px 18px. */
   padding: 18px 18px;
-  /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
   /* Round the element corners: 16px. */
   border-radius: 16px;
-  /* Set the background fill: var(--panel). */
   background: var(--panel);
-  /* Add the specified shadow: var(--shadow). */
   box-shadow: var(--shadow);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .stat-card strong. */
 .stat-card strong {
-  /* Choose the layout mode or hide the element: block. */
   display: block;
-  /* Set outer space above the element: 8px. */
   margin-top: 8px;
   /* Set the text size: 1.8rem. */
   font-size: 1.8rem;
-  /* Set the distance between lines of text: 1.1. */
   line-height: 1.1;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .stat-card strong span. */
 .stat-card strong span {
-  /* Choose the layout mode or hide the element: block. */
   display: block;
-  /* Set outer space above the element: 5px. */
   margin-top: 5px;
   /* Set the text size: 0.72rem. */
   font-size: 0.72rem;
-  /* Set the text weight: 400. */
   font-weight: 400;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .stat-label. */
 .stat-label {
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text size: 0.76rem. */
   font-size: 0.76rem;
   /* Change the displayed letter casing: uppercase. */
   text-transform: uppercase;
-  /* Adjust spacing between characters: 0.08em. */
   letter-spacing: 0.08em;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .stat-icon. */
 .stat-icon {
-  /* Set the element width: 46px. */
   width: 46px;
-  /* Set the element height: 46px. */
   height: 46px;
   /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Set both alignment directions for grid items: center. */
   place-items: center;
-  /* Round the element corners: 12px. */
   border-radius: 12px;
   /* Set the foreground text or icon color: var(--primary-strong). */
   color: var(--primary-strong);
-  /* Set the background fill: #edf7f1. */
   background: #edf7f1;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .task-section. */
 .task-section {
-  /* Set outer space above the element: 10px. */
   margin-top: 10px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .section-heading. */
 .section-heading {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
   /* Align children across the layout’s cross axis: end. */
   align-items: end;
-  /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Set outer space below the element: 14px. */
   margin-bottom: 14px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .section-heading h2. */
 .section-heading h2 {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 10px. */
   gap: 10px;
-  /* Set the text size: 1.25rem. */
   font-size: 1.25rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .count-badge. */
 .count-badge {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Prevent the element from shrinking below this width: 28px. */
   min-width: 28px;
   /* Distribute children along the main axis: center. */
   justify-content: center;
-  /* Set space inside this element: 4px 8px. */
   padding: 4px 8px;
-  /* Set the background fill: var(--soft). */
   background: var(--soft);
   /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Round the element corners: 999px. */
   border-radius: 999px;
-  /* Set the text size: 0.72rem. */
   font-size: 0.72rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .section-heading p. */
 .section-heading p {
-  /* Set outer space above the element: 4px. */
   margin-top: 4px;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
   /* Set the text size: 0.85rem. */
   font-size: 0.85rem;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .section-decoration. */
 .section-decoration {
   /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 7px. */
   gap: 7px;
   /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text size: 0.75rem. */
   font-size: 0.75rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .task-panel. */
 .task-panel {
-  /* Set the background fill: var(--panel). */
   background: var(--panel);
-  /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
   /* Round the element corners: 16px. */
   border-radius: 16px;
-  /* Add the specified shadow: var(--shadow). */
   box-shadow: var(--shadow);
-  /* Control whether overflowing content is clipped, visible, or scrollable: hidden. */
   overflow: hidden;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Include .task-toolbar in this group of selectors. */
 .task-toolbar,
-/* Include .filter-row in this group of selectors. */
 .filter-row,
-/* Include .list-column-labels in this group of selectors. */
 .list-column-labels,
 /* Include .task-row in this group of selectors. */
 .task-row,
-/* Style elements matching .list-footer. */
 .list-footer {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
   /* Define the widths of grid columns: minmax(180px, 2fr) 120px 110px 120px 110px. */
   grid-template-columns: minmax(180px, 2fr) 120px 110px 120px 110px;
-  /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set inner space on the left: 18px. */
   padding-left: 18px;
-  /* Set inner space on the right: 18px. */
   padding-right: 18px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .task-toolbar. */
 .task-toolbar {
-  /* Set inner space above the content: 14px. */
   padding-top: 14px;
-  /* Set inner space below the content: 14px. */
   padding-bottom: 14px;
   /* Style the bottom edge: 1px solid var(--line). */
   border-bottom: 1px solid var(--line);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .status-tabs. */
 .status-tabs {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Allow flex items to wrap onto another line: wrap. */
   flex-wrap: wrap;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .status-tabs button. */
 .status-tabs button {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 7px. */
   gap: 7px;
-  /* Set space inside this element: 8px 12px. */
   padding: 8px 12px;
-  /* Round the element corners: 999px. */
   border-radius: 999px;
   /* Set the background fill: var(--soft). */
   background: var(--soft);
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text size: 0.8rem. */
   font-size: 0.8rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .status-tabs button.selected. */
 .status-tabs button.selected {
-  /* Set the background fill: #edf7f1. */
   background: #edf7f1;
-  /* Set the foreground text or icon color: var(--primary-strong). */
   color: var(--primary-strong);
   /* Set the text weight: 600. */
   font-weight: 600;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Include .sort-control in this group of selectors. */
 .sort-control,
 /* Style elements matching .priority-filter. */
 .priority-filter {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Distribute children along the main axis: flex-end. */
   justify-content: flex-end;
-  /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Include .sort-control select in this group of selectors. */
 .sort-control select,
-/* Style elements matching .priority-filter select. */
 .priority-filter select {
-  /* Set space inside this element: 8px 10px. */
   padding: 8px 10px;
   /* Set the text size: 0.8rem. */
   font-size: 0.8rem;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .filter-row. */
 .filter-row {
   /* Set inner space above the content: 14px. */
   padding-top: 14px;
-  /* Set inner space below the content: 14px. */
   padding-bottom: 14px;
-  /* Style the bottom edge: 1px solid var(--line). */
   border-bottom: 1px solid var(--line);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .search-field. */
 .search-field {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Set space inside this element: 0 10px. */
   padding: 0 10px;
-  /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
   /* Round the element corners: 10px. */
   border-radius: 10px;
-  /* Set the background fill: #f9fafb. */
   background: #f9fafb;
-  /* Reserve at least this much height: 42px. */
   min-height: 42px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .search-field input. */
 .search-field input {
-  /* Set the element width: 100%. */
   width: 100%;
-  /* Define the border width, style, and color: none. */
   border: none;
   /* Set the background fill: transparent. */
   background: transparent;
-  /* Set space inside this element: 0. */
   padding: 0;
-  /* Reserve at least this much height: 32px. */
   min-height: 32px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .search-field input:focus. */
 .search-field input:focus {
-  /* Draw a focus outline without changing layout size: none. */
   outline: none;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .list-column-labels. */
 .list-column-labels {
-  /* Set inner space above the content: 12px. */
   padding-top: 12px;
-  /* Set inner space below the content: 12px. */
   padding-bottom: 12px;
   /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text size: 0.7rem. */
   font-size: 0.7rem;
-  /* Change the displayed letter casing: uppercase. */
   text-transform: uppercase;
   /* Adjust spacing between characters: 0.1em. */
   letter-spacing: 0.1em;
-  /* Style the bottom edge: 1px solid var(--line). */
   border-bottom: 1px solid var(--line);
-  /* Set the background fill: #fafaf8. */
   background: #fafaf8;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .task-list. */
 .task-list {
-  /* Control list markers: none. */
   list-style: none;
-  /* Set space outside this element: 0. */
   margin: 0;
   /* Set space inside this element: 0. */
   padding: 0;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .task-row. */
 .task-row {
   /* Set inner space above the content: 16px. */
   padding-top: 16px;
-  /* Set inner space below the content: 16px. */
   padding-bottom: 16px;
-  /* Style the bottom edge: 1px solid var(--line). */
   border-bottom: 1px solid var(--line);
   /* Reserve at least this much height: 86px. */
   min-height: 86px;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .task-row:hover. */
 .task-row:hover {
   /* Set the background fill: #fbfbfa. */
   background: #fbfbfa;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .task-main. */
 .task-main {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: flex-start. */
   align-items: flex-start;
-  /* Set the spacing between layout items: 12px. */
   gap: 12px;
   /* Prevent the element from shrinking below this width: 0. */
   min-width: 0;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .completion-control. */
 .completion-control {
   /* Set the element width: 18px. */
   width: 18px;
-  /* Set the element height: 18px. */
   height: 18px;
-  /* Round the element corners: 50%. */
   border-radius: 50%;
   /* Define the border width, style, and color: 1.5px solid #cbd5e1. */
   border: 1.5px solid #cbd5e1;
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Set both alignment directions for grid items: center. */
   place-items: center;
   /* Set the background fill: #fff. */
   background: #fff;
-  /* Set outer space above the element: 3px. */
   margin-top: 3px;
-  /* Control whether this flex item can shrink: 0. */
   flex-shrink: 0;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .completion-control.checked. */
 .completion-control.checked {
-  /* Set the background fill: var(--primary). */
   background: var(--primary);
-  /* Set the border color: var(--primary). */
   border-color: var(--primary);
   /* Set the foreground text or icon color: white. */
   color: white;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .task-text. */
 .task-text {
   /* Prevent the element from shrinking below this width: 0. */
   min-width: 0;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .task-title. */
 .task-title {
   /* Choose the layout mode or hide the element: inline-block. */
   display: inline-block;
-  /* Set the text weight: 600. */
   font-weight: 600;
-  /* Set the distance between lines of text: 1.4. */
   line-height: 1.4;
   /* Set the word-break CSS property: break-word. */
   word-break: break-word;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .task-title:hover. */
 .task-title:hover {
   /* Set the foreground text or icon color: var(--primary-strong). */
   color: var(--primary-strong);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .task-text p. */
 .task-text p {
   /* Set outer space above the element: 4px. */
   margin-top: 4px;
-  /* Set the text size: 0.8rem. */
   font-size: 0.8rem;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
   /* Set the distance between lines of text: 1.5. */
   line-height: 1.5;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .mobile-task-meta. */
 .mobile-task-meta {
   /* Choose the layout mode or hide the element: none. */
   display: none;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Include .row-project in this group of selectors. */
 .row-project,
 /* Include .row-priority in this group of selectors. */
 .row-priority,
-/* Include .row-date in this group of selectors. */
 .row-date,
-/* Style elements matching .row-actions. */
 .row-actions {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Include .row-project in this group of selectors. */
 .row-project,
-/* Include .row-priority in this group of selectors. */
 .row-priority,
-/* Style elements matching .row-date. */
 .row-date {
   /* Reserve at least this much height: 32px. */
   min-height: 32px;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .row-date. */
 .row-date {
   /* Set the spacing between layout items: 6px. */
   gap: 6px;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text size: 0.8rem. */
   font-size: 0.8rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .row-date.overdue. */
 .row-date.overdue {
-  /* Set the foreground text or icon color: var(--danger). */
   color: var(--danger);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .row-date.due-today. */
 .row-date.due-today {
-  /* Set the foreground text or icon color: var(--primary-strong). */
   color: var(--primary-strong);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .row-actions. */
 .row-actions {
-  /* Distribute children along the main axis: flex-end. */
   justify-content: flex-end;
-  /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .icon-button. */
 .icon-button {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Distribute children along the main axis: center. */
   justify-content: center;
-  /* Set the element width: 32px. */
   width: 32px;
-  /* Set the element height: 32px. */
   height: 32px;
   /* Round the element corners: 8px. */
   border-radius: 8px;
-  /* Set the background fill: var(--soft). */
   background: var(--soft);
-  /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
   /* Set the foreground text or icon color: var(--text). */
   color: var(--text);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .delete-action. */
 .delete-action {
   /* Set the foreground text or icon color: var(--danger). */
   color: var(--danger);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .inline-add. */
 .inline-add {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 10px. */
   gap: 10px;
   /* Set the element width: 100%. */
   width: 100%;
-  /* Set space inside this element: 18px 18px. */
   padding: 18px 18px;
-  /* Set the foreground text or icon color: var(--primary-strong). */
   color: var(--primary-strong);
   /* Set the text weight: 600. */
   font-weight: 600;
-  /* Style the top edge: 1px solid var(--line). */
   border-top: 1px solid var(--line);
-  /* Set the background fill: #fafcfb. */
   background: #fafcfb;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .inline-add span. */
 .inline-add span {
-  /* Choose the layout mode or hide the element: inline-block. */
   display: inline-block;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
   /* Set the text weight: 400. */
   font-weight: 400;
-  /* Set outer space on the left: 8px. */
   margin-left: 8px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .list-footer. */
 .list-footer {
-  /* Set inner space above the content: 12px. */
   padding-top: 12px;
-  /* Set inner space below the content: 14px. */
   padding-bottom: 14px;
   /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text size: 0.8rem. */
   font-size: 0.8rem;
-  /* Style the top edge: 1px solid var(--line). */
   border-top: 1px solid var(--line);
   /* Set the background fill: #fafaf8. */
   background: #fafaf8;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .saved-dot. */
 .saved-dot {
   /* Set the element width: 8px. */
   width: 8px;
-  /* Set the element height: 8px. */
   height: 8px;
-  /* Choose the layout mode or hide the element: inline-block. */
   display: inline-block;
   /* Round the element corners: 50%. */
   border-radius: 50%;
-  /* Set the background fill: var(--success). */
   background: var(--success);
-  /* Set outer space on the right: 8px. */
   margin-right: 8px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .progress-note. */
 .progress-note {
-  /* Set outer space above the element: 26px. */
   margin-top: 26px;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 18px. */
   gap: 18px;
-  /* Set the background fill: var(--panel). */
   background: var(--panel);
   /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
-  /* Round the element corners: 16px. */
   border-radius: 16px;
-  /* Set space inside this element: 18px 20px. */
   padding: 18px 20px;
   /* Add the specified shadow: var(--shadow). */
   box-shadow: var(--shadow);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .progress-ring. */
 .progress-ring {
   /* Set the element width: 64px. */
   width: 64px;
-  /* Set the element height: 64px. */
   height: 64px;
-  /* Round the element corners: 50%. */
   border-radius: 50%;
   /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Set both alignment directions for grid items: center. */
   place-items: center;
-  /* Choose normal, relative, absolute, sticky, or fixed positioning: relative. */
   position: relative;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .progress-ring::before. */
 .progress-ring::before {
-  /* Set the content CSS property: ''. */
   content: '';
-  /* Choose normal, relative, absolute, sticky, or fixed positioning: absolute. */
   position: absolute;
   /* Set offsets from all four edges: 7px. */
   inset: 7px;
-  /* Round the element corners: 50%. */
   border-radius: 50%;
-  /* Set the background fill: white. */
   background: white;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .progress-ring span. */
 .progress-ring span {
-  /* Choose normal, relative, absolute, sticky, or fixed positioning: relative. */
   position: relative;
-  /* Choose the stacking order of positioned elements: 1. */
   z-index: 1;
   /* Set the text weight: 700. */
   font-weight: 700;
-  /* Set the text size: 1rem. */
   font-size: 1rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .progress-ring small. */
 .progress-ring small {
-  /* Set the text size: 0.65rem. */
   font-size: 0.65rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .progress-note h3. */
 .progress-note h3 {
-  /* Set the text size: 1.08rem. */
   font-size: 1.08rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .progress-note p. */
 .progress-note p {
-  /* Set outer space above the element: 4px. */
   margin-top: 4px;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
   /* Set the text size: 0.85rem. */
   font-size: 0.85rem;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .progress-note a. */
 .progress-note a {
   /* Set outer space on the left: auto. */
   margin-left: auto;
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Set the foreground text or icon color: var(--primary-strong). */
   color: var(--primary-strong);
-  /* Set the text weight: 600. */
   font-weight: 600;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .page-footer. */
 .page-footer {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
   /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Set inner space above the content: 18px. */
   padding-top: 18px;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
   /* Set the text size: 0.8rem. */
   font-size: 0.8rem;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .back-link. */
 .back-link {
   /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 8px. */
   gap: 8px;
   /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set space outside this element: 8px 0 18px. */
   margin: 8px 0 18px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .detail-intro. */
 .detail-intro {
-  /* Set space inside this element: 14px 0 10px. */
   padding: 14px 0 10px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .detail-title-row. */
 .detail-title-row {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
-  /* Set the spacing between layout items: 16px. */
   gap: 16px;
-  /* Set outer space above the element: 12px. */
   margin-top: 12px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .detail-title-row h1. */
 .detail-title-row h1 {
-  /* Set the text size: clamp(2rem, 3vw, 2.7rem). */
   font-size: clamp(2rem, 3vw, 2.7rem);
-  /* Set the distance between lines of text: 1.15. */
   line-height: 1.15;
   /* Adjust spacing between characters: -0.04em. */
   letter-spacing: -0.04em;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .finished-title. */
 .finished-title {
   /* Choose decorations such as underlines or completion strikethroughs: line-through. */
   text-decoration: line-through;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .detail-tags. */
 .detail-tags {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Allow flex items to wrap onto another line: wrap. */
   flex-wrap: wrap;
-  /* Set outer space above the element: 16px. */
   margin-top: 16px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .status-badge. */
 .status-badge {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 6px. */
   gap: 6px;
-  /* Set space inside this element: 6px 10px. */
   padding: 6px 10px;
-  /* Round the element corners: 999px. */
   border-radius: 999px;
   /* Set the background fill: #edf7f1. */
   background: #edf7f1;
-  /* Set the foreground text or icon color: var(--primary-strong). */
   color: var(--primary-strong);
-  /* Set the text size: 0.78rem. */
   font-size: 0.78rem;
   /* Set the text weight: 600. */
   font-weight: 600;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .status-badge.done. */
 .status-badge.done {
   /* Set the background fill: #eef2ff. */
   background: #eef2ff;
-  /* Set the foreground text or icon color: #4338ca. */
   color: #4338ca;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .detail-grid. */
 .detail-grid {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Define the widths of grid columns: minmax(0, 1.5fr) minmax(260px, 0.9fr). */
   grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr);
   /* Set the spacing between layout items: 20px. */
   gap: 20px;
-  /* Set outer space above the element: 18px. */
   margin-top: 18px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .detail-card. */
 .detail-card {
-  /* Set the background fill: var(--panel). */
   background: var(--panel);
-  /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
   /* Round the element corners: 16px. */
   border-radius: 16px;
-  /* Add the specified shadow: var(--shadow). */
   box-shadow: var(--shadow);
-  /* Set space inside this element: 18px. */
   padding: 18px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .detail-complete. */
 .detail-complete {
-  /* Set the element width: 100%. */
   width: 100%;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
   /* Round the element corners: 12px. */
   border-radius: 12px;
-  /* Set the background fill: #fafaf8. */
   background: #fafaf8;
-  /* Set space inside this element: 14px 16px. */
   padding: 14px 16px;
   /* Align inline text within its container: left. */
   text-align: left;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Include .detail-complete strong in this group of selectors. */
 .detail-complete strong,
 /* Style elements matching .detail-complete small. */
 .detail-complete small {
-  /* Choose the layout mode or hide the element: block. */
   display: block;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .detail-complete small. */
 .detail-complete small {
-  /* Set outer space above the element: 4px. */
   margin-top: 4px;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .completion-control.checked. */
 .completion-control.checked {
-  /* Set the background fill: var(--primary). */
   background: var(--primary);
-  /* Set the foreground text or icon color: white. */
   color: white;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .description-section. */
 .description-section {
-  /* Set outer space above the element: 18px. */
   margin-top: 18px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .description-section h2. */
 .description-section h2 {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Set the text size: 1.02rem. */
   font-size: 1.02rem;
-  /* Set outer space below the element: 10px. */
   margin-bottom: 10px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .task-description. */
 .task-description {
-  /* Set the foreground text or icon color: var(--text). */
   color: var(--text);
-  /* Set the distance between lines of text: 1.7. */
   line-height: 1.7;
   /* Control whitespace preservation and line wrapping: pre-wrap. */
   white-space: pre-wrap;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .no-description. */
 .no-description {
   /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Define the border width, style, and color: 1px dashed var(--line). */
   border: 1px dashed var(--line);
-  /* Round the element corners: 12px. */
   border-radius: 12px;
   /* Set space inside this element: 16px. */
   padding: 16px;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .text-button. */
 .text-button {
   /* Set outer space above the element: 10px. */
   margin-top: 10px;
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 6px. */
   gap: 6px;
-  /* Set the text weight: 600. */
   font-weight: 600;
-  /* Set the foreground text or icon color: var(--primary-strong). */
   color: var(--primary-strong);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .detail-card-footer. */
 .detail-card-footer {
-  /* Set outer space above the element: 18px. */
   margin-top: 18px;
-  /* Set inner space above the content: 12px. */
   padding-top: 12px;
   /* Style the top edge: 1px solid var(--line). */
   border-top: 1px solid var(--line);
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text size: 0.8rem. */
   font-size: 0.8rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .properties h2. */
 .properties h2 {
-  /* Set outer space below the element: 14px. */
   margin-bottom: 14px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .properties dl. */
 .properties dl {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Set the spacing between layout items: 14px. */
   gap: 14px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .properties dl > div. */
 .properties dl > div {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Set the spacing between layout items: 6px. */
   gap: 6px;
   /* Set inner space below the content: 12px. */
   padding-bottom: 12px;
-  /* Style the bottom edge: 1px solid var(--line). */
   border-bottom: 1px solid var(--line);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .properties dt. */
 .properties dt {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text size: 0.8rem. */
   font-size: 0.8rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .properties dd. */
 .properties dd {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Allow flex items to wrap onto another line: wrap. */
   flex-wrap: wrap;
-  /* Set the foreground text or icon color: var(--text). */
   color: var(--text);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .overdue. */
 .overdue {
-  /* Set the foreground text or icon color: var(--danger). */
   color: var(--danger);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .action-error. */
 .action-error {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
-  /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Set space outside this element: 12px 0. */
   margin: 12px 0;
   /* Set space inside this element: 10px 12px. */
   padding: 10px 12px;
-  /* Round the element corners: 10px. */
   border-radius: 10px;
-  /* Set the background fill: #fff5f5. */
   background: #fff5f5;
   /* Set the foreground text or icon color: var(--danger). */
   color: var(--danger);
-  /* Define the border width, style, and color: 1px solid #fecaca. */
   border: 1px solid #fecaca;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .form-fields. */
 .form-fields {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Set the spacing between layout items: 14px. */
   gap: 14px;
   /* Set space inside this element: 0. */
   padding: 0;
-  /* Set space outside this element: 0. */
   margin: 0;
-  /* Define the border width, style, and color: 0. */
   border: 0;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .form-fields label. */
 .form-fields label {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Set the spacing between layout items: 8px. */
   gap: 8px;
   /* Set the text size: 0.86rem. */
   font-size: 0.86rem;
-  /* Set the text weight: 600. */
   font-weight: 600;
-  /* Set the foreground text or icon color: var(--text). */
   color: var(--text);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .form-grid. */
 .form-grid {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Define the widths of grid columns: repeat(2, minmax(0, 1fr)). */
   grid-template-columns: repeat(2, minmax(0, 1fr));
   /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Include .required in this group of selectors. */
 .required,
 /* Style elements matching .optional. */
 .optional {
-  /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the text weight: 400. */
   font-weight: 400;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .modal. */
 .modal {
-  /* Define the border width, style, and color: 1px solid var(--line). */
   border: 1px solid var(--line);
-  /* Round the element corners: 18px. */
   border-radius: 18px;
   /* Set space inside this element: 0. */
   padding: 0;
-  /* Set the element width: min(540px, calc(100vw - 24px)). */
   width: min(540px, calc(100vw - 24px));
-  /* Set the background fill: #fff. */
   background: #fff;
   /* Add the specified shadow: var(--shadow). */
   box-shadow: var(--shadow);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .modal::backdrop. */
 .modal::backdrop {
   /* Set the background fill: rgba(17, 24, 39, 0.3). */
   background: rgba(17, 24, 39, 0.3);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .modal-heading. */
 .modal-heading {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
-  /* Align children across the layout’s cross axis: start. */
   align-items: start;
   /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Set space inside this element: 18px 18px 0. */
   padding: 18px 18px 0;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .modal-heading h2. */
 .modal-heading h2 {
-  /* Set outer space above the element: 6px. */
   margin-top: 6px;
-  /* Set the text size: 1.25rem. */
   font-size: 1.25rem;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .modal form. */
 .modal form {
-  /* Set space inside this element: 18px. */
   padding: 18px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .modal-actions. */
 .modal-actions {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Distribute children along the main axis: flex-end. */
   justify-content: flex-end;
   /* Set space inside this element: 0 18px 18px. */
   padding: 0 18px 18px;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .help-content. */
 .help-content {
   /* Set space inside this element: 18px. */
   padding: 18px;
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .help-content p. */
 .help-content p {
   /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Set the distance between lines of text: 1.6. */
   line-height: 1.6;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .help-content ul. */
 .help-content ul {
-  /* Set space outside this element: 12px 0 0. */
   margin: 12px 0 0;
-  /* Set inner space on the left: 18px. */
   padding-left: 18px;
   /* Set the foreground text or icon color: var(--text). */
   color: var(--text);
-  /* Set the distance between lines of text: 1.7. */
   line-height: 1.7;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .empty-state. */
 .empty-state {
-  /* Set space inside this element: 30px 18px. */
   padding: 30px 18px;
-  /* Align inline text within its container: center. */
   text-align: center;
   /* Set the foreground text or icon color: var(--muted). */
   color: var(--muted);
-  /* Finish this style rule or responsive block. */
 }
 
-/* Style elements matching .empty-state h3. */
 .empty-state h3 {
   /* Set outer space below the element: 8px. */
   margin-bottom: 8px;
-  /* Set the foreground text or icon color: var(--text). */
   color: var(--text);
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .empty-state .button. */
 .empty-state .button {
-  /* Set outer space above the element: 14px. */
   margin-top: 14px;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Include .priority-pill in this group of selectors. */
 .priority-pill,
-/* Style elements matching .project-pill. */
 .project-pill {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 6px. */
   gap: 6px;
-  /* Round the element corners: 999px. */
   border-radius: 999px;
   /* Set space inside this element: 5px 9px. */
   padding: 5px 9px;
-  /* Set the text size: 0.74rem. */
   font-size: 0.74rem;
-  /* Set the text weight: 600. */
   font-weight: 600;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .priority-pill.low. */
 .priority-pill.low {
-  /* Set the background fill: #ecfdf5. */
   background: #ecfdf5;
-  /* Set the foreground text or icon color: #166534. */
   color: #166534;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .priority-pill.medium. */
 .priority-pill.medium {
-  /* Set the background fill: #fff7ed. */
   background: #fff7ed;
-  /* Set the foreground text or icon color: #9a5b00. */
   color: #9a5b00;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .priority-pill.high. */
 .priority-pill.high {
-  /* Set the background fill: #fef2f2. */
   background: #fef2f2;
-  /* Set the foreground text or icon color: #b91c1c. */
   color: #b91c1c;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Style elements matching .project-pill.personal. */
 .project-pill.personal {
-  /* Set the background fill: #f3f4f6. */
   background: #f3f4f6;
-  /* Set the foreground text or icon color: #374151. */
   color: #374151;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .project-pill.work. */
 .project-pill.work {
-  /* Set the background fill: #eff6ff. */
   background: #eff6ff;
-  /* Set the foreground text or icon color: #1d4ed8. */
   color: #1d4ed8;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .project-pill.learning. */
 .project-pill.learning {
-  /* Set the background fill: #f5f3ff. */
   background: #f5f3ff;
-  /* Set the foreground text or icon color: #6d28d9. */
   color: #6d28d9;
-  /* Finish this style rule or responsive block. */
 }
 
 /* Apply these overrides only when (max-width: 840px). */
 @media (max-width: 840px) {
-  /* Style elements matching .simple-header. */
   .simple-header {
-    /* Allow flex items to wrap onto another line: wrap. */
     flex-wrap: wrap;
-    /* Finish this style rule or responsive block. */
   }
 
   /* Include .overviews in this group of selectors. */
   .overviews,
-  /* Style elements matching .overview. */
   .overview {
-    /* Define the widths of grid columns: 1fr. */
     grid-template-columns: 1fr;
-    /* Finish this style rule or responsive block. */
   }
 
   /* Include .task-toolbar in this group of selectors. */
   .task-toolbar,
-  /* Include .filter-row in this group of selectors. */
   .filter-row,
-  /* Include .list-column-labels in this group of selectors. */
   .list-column-labels,
   /* Include .task-row in this group of selectors. */
   .task-row,
-  /* Style elements matching .list-footer. */
   .list-footer {
-    /* Define the widths of grid columns: 1fr. */
     grid-template-columns: 1fr;
-    /* Finish this style rule or responsive block. */
   }
 
   /* Include .task-toolbar in this group of selectors. */
   .task-toolbar,
-  /* Include .filter-row in this group of selectors. */
   .filter-row,
-  /* Style elements matching .list-column-labels. */
   .list-column-labels {
     /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
 
-  /* Style elements matching .task-row. */
   .task-row {
     /* Choose the layout mode or hide the element: flex. */
     display: flex;
-    /* Arrange flex items horizontally or vertically: column. */
     flex-direction: column;
-    /* Align children across the layout’s cross axis: stretch. */
     align-items: stretch;
     /* Set the spacing between layout items: 12px. */
     gap: 12px;
-    /* Finish this style rule or responsive block. */
   }
 
-  /* Include .row-project in this group of selectors. */
   .row-project,
   /* Include .row-priority in this group of selectors. */
   .row-priority,
-  /* Include .row-date in this group of selectors. */
   .row-date,
-  /* Style elements matching .row-actions. */
   .row-actions {
     /* Distribute children along the main axis: flex-start. */
     justify-content: flex-start;
-    /* Finish this style rule or responsive block. */
   }
 
-  /* Style elements matching .mobile-task-meta. */
   .mobile-task-meta {
     /* Choose the layout mode or hide the element: flex. */
     display: flex;
-    /* Align children across the layout’s cross axis: center. */
     align-items: center;
-    /* Set the spacing between layout items: 8px. */
     gap: 8px;
     /* Allow flex items to wrap onto another line: wrap. */
     flex-wrap: wrap;
-    /* Set outer space above the element: 8px. */
     margin-top: 8px;
-    /* Finish this style rule or responsive block. */
   }
 
   /* Style elements matching .detail-grid. */
   .detail-grid {
-    /* Define the widths of grid columns: 1fr. */
     grid-template-columns: 1fr;
-    /* Finish this style rule or responsive block. */
   }
 
   /* Include .page-intro in this group of selectors. */
   .page-intro,
-  /* Include .detail-title-row in this group of selectors. */
   .detail-title-row,
-  /* Style elements matching .progress-note. */
   .progress-note {
     /* Arrange flex items horizontally or vertically: column. */
     flex-direction: column;
-    /* Align children across the layout’s cross axis: flex-start. */
     align-items: flex-start;
-    /* Finish this style rule or responsive block. */
   }
 
   /* Style elements matching .progress-note a. */
   .progress-note a {
-    /* Set outer space on the left: 0. */
     margin-left: 0;
-    /* Finish this style rule or responsive block. */
   }
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .task-text > p. */
 .task-text > p {
-  /* Set the foreground text or icon color: #9a9e90. */
   color: #9a9e90;
-  /* Set the text size: 10px. */
   font-size: 10px;
   /* Set outer space above the element: 4px. */
   margin-top: 4px;
-  /* Control whitespace preservation and line wrapping: nowrap. */
   white-space: nowrap;
-  /* Control whether overflowing content is clipped, visible, or scrollable: hidden. */
   overflow: hidden;
   /* Choose how clipped text is indicated: ellipsis. */
   text-overflow: ellipsis;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .is-completed .task-title. */
 .is-completed .task-title {
   /* Set the foreground text or icon color: #a0a592. */
   color: #a0a592;
-  /* Choose decorations such as underlines or completion strikethroughs: line-through. */
   text-decoration: line-through;
-  /* Set the text weight: 400. */
   font-weight: 400;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .is-completed .task-text > p. */
 .is-completed .task-text > p {
-  /* Set the foreground text or icon color: #b0b4a7. */
   color: #b0b4a7;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .project-badge. */
 .project-badge {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Set the spacing between layout items: 5px. */
   gap: 5px;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the text size: 9px. */
   font-size: 9px;
-  /* Set the foreground text or icon color: #8a857b. */
   color: #8a857b;
   /* Set space inside this element: 5px 7px. */
   padding: 5px 7px;
-  /* Round the element corners: 4px. */
   border-radius: 4px;
-  /* Set the background fill: #f5f1eb. */
   background: #f5f1eb;
   /* Change the displayed letter casing: capitalize. */
   text-transform: capitalize;
-  /* Control whitespace preservation and line wrapping: nowrap. */
   white-space: nowrap;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .project-badge.work. */
 .project-badge.work {
-  /* Set the foreground text or icon color: #7b8b9b. */
   color: #7b8b9b;
-  /* Set the background fill: #f0f3f6. */
   background: #f0f3f6;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .project-badge.learning. */
 .project-badge.learning {
-  /* Set the foreground text or icon color: #9a88a6. */
   color: #9a88a6;
-  /* Set the background fill: #f4f0f7. */
   background: #f4f0f7;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .project-badge .project-dot. */
 .project-badge .project-dot {
-  /* Set the element width: 4px. */
   width: 4px;
-  /* Set the element height: 4px. */
   height: 4px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .priority-badge. */
 .priority-badge {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 5px. */
   gap: 5px;
-  /* Change the displayed letter casing: capitalize. */
   text-transform: capitalize;
-  /* Set the text size: 9px. */
   font-size: 9px;
   /* Set space inside this element: 4px 7px. */
   padding: 4px 7px;
-  /* Round the element corners: 4px. */
   border-radius: 4px;
-  /* Set the foreground text or icon color: #9d9574. */
   color: #9d9574;
   /* Set the background fill: #f8f5e9. */
   background: #f8f5e9;
-  /* Control whitespace preservation and line wrapping: nowrap. */
   white-space: nowrap;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .priority-badge.high. */
 .priority-badge.high {
-  /* Set the foreground text or icon color: #bf8171. */
   color: #bf8171;
-  /* Set the background fill: #fbefe9. */
   background: #fbefe9;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .priority-badge.low. */
 .priority-badge.low {
-  /* Set the foreground text or icon color: #849677. */
   color: #849677;
-  /* Set the background fill: #eff4e9. */
   background: #eff4e9;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .row-date. */
 .row-date {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 5px. */
   gap: 5px;
-  /* Set the text size: 9px. */
   font-size: 9px;
-  /* Set the foreground text or icon color: #979d8e. */
   color: #979d8e;
-  /* Finish this style rule or responsive block. */
 }
 /* Include .row-date small in this group of selectors. */
 .row-date small,
-/* Style elements matching .properties dd > small. */
 .properties dd > small {
-  /* Choose the layout mode or hide the element: block. */
   display: block;
   /* Set the text size: 8px. */
   font-size: 8px;
-  /* Set outer space above the element: 3px. */
   margin-top: 3px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .row-date.due-today. */
 .row-date.due-today {
-  /* Set the foreground text or icon color: #9f986c. */
   color: #9f986c;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .overdue. */
 .overdue {
-  /* Set the foreground text or icon color: #b57461 !important. */
   color: #b57461 !important;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .row-actions. */
 .row-actions {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Distribute children along the main axis: flex-end. */
   justify-content: flex-end;
-  /* Set the spacing between layout items: 1px. */
   gap: 1px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .icon-button. */
 .icon-button {
-  /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Distribute children along the main axis: center. */
   justify-content: center;
-  /* Set space inside this element: 5px. */
   padding: 5px;
-  /* Round the element corners: 5px. */
   border-radius: 5px;
   /* Set the foreground text or icon color: #939b88. */
   color: #939b88;
-  /* Set the background fill: transparent. */
   background: transparent;
-  /* Prevent the element from shrinking below this width: 25px. */
   min-width: 25px;
   /* Reserve at least this much height: 27px. */
   min-height: 27px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .icon-button:hover. */
 .icon-button:hover {
   /* Set the background fill: #edf1e5. */
   background: #edf1e5;
-  /* Set the foreground text or icon color: #5e7150. */
   color: #5e7150;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .delete-action:hover. */
 .delete-action:hover {
-  /* Set the foreground text or icon color: #b65e4c. */
   color: #b65e4c;
-  /* Set the background fill: #fceee8. */
   background: #fceee8;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .row-actions .icon-button:not(.open-task). */
 .row-actions .icon-button:not(.open-task) {
-  /* Set the element transparency: 0. */
   opacity: 0;
-  /* Finish this style rule or responsive block. */
 }
 /* Include .task-row:hover .row-actions .icon-button in this group of selectors. */
 .task-row:hover .row-actions .icon-button,
-/* Style elements matching .task-row:focus-within .row-actions .icon-button. */
 .task-row:focus-within .row-actions .icon-button {
-  /* Set the element transparency: 1. */
   opacity: 1;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .mobile-task-meta. */
 .mobile-task-meta {
-  /* Choose the layout mode or hide the element: none. */
   display: none;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .inline-add. */
 .inline-add {
-  /* Set space inside this element: 19px 25px. */
   padding: 19px 25px;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Set the element width: 100%. */
   width: 100%;
   /* Set the background fill: #fff. */
   background: #fff;
-  /* Align inline text within its container: left. */
   text-align: left;
-  /* Set the foreground text or icon color: #8b967b. */
   color: #8b967b;
   /* Set the text size: 11px. */
   font-size: 11px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .inline-add:hover. */
 .inline-add:hover {
   /* Set the background fill: #fafcf6. */
   background: #fafcf6;
-  /* Set the foreground text or icon color: #54693e. */
   color: #54693e;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .inline-add > span. */
 .inline-add > span {
-  /* Set outer space on the left: auto. */
   margin-left: auto;
-  /* Set the text size: 9px. */
   font-size: 9px;
   /* Set the foreground text or icon color: #b0b7a3. */
   color: #b0b7a3;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .list-footer. */
 .list-footer {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
   /* Set space inside this element: 13px 25px. */
   padding: 13px 25px;
-  /* Set the text size: 9px. */
   font-size: 9px;
-  /* Set the foreground text or icon color: #9ba38e. */
   color: #9ba38e;
   /* Set the background fill: #fafbf6. */
   background: #fafbf6;
-  /* Style the top edge: 1px solid #edf0e5. */
   border-top: 1px solid #edf0e5;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .list-footer > span:last-child. */
 .list-footer > span:last-child {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 6px. */
   gap: 6px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .saved-dot. */
 .saved-dot {
   /* Set the background fill: #acbc90. */
   background: #acbc90;
-  /* Set the element width: 4px. */
   width: 4px;
-  /* Set the element height: 4px. */
   height: 4px;
   /* Round the element corners: 50%. */
   border-radius: 50%;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .progress-note. */
 .progress-note {
   /* Set outer space above the element: 24px. */
   margin-top: 24px;
-  /* Set space inside this element: 21px 24px. */
   padding: 21px 24px;
-  /* Define the border width, style, and color: 1px solid #e5e9d9. */
   border: 1px solid #e5e9d9;
   /* Round the element corners: 10px. */
   border-radius: 10px;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 16px. */
   gap: 16px;
-  /* Set the background fill: #f0f3e8. */
   background: #f0f3e8;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .progress-ring. */
 .progress-ring {
-  /* Set the element width: 44px. */
   width: 44px;
-  /* Set the element height: 44px. */
   height: 44px;
   /* Round the element corners: 50%. */
   border-radius: 50%;
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Set both alignment directions for grid items: center. */
   place-items: center;
   /* Control whether this flex item can shrink: 0. */
   flex-shrink: 0;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .progress-ring > span. */
 .progress-ring > span {
   /* Set the element width: 36px. */
   width: 36px;
-  /* Set the element height: 36px. */
   height: 36px;
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
   /* Define the widths of grid columns: auto auto. */
   grid-template-columns: auto auto;
-  /* Set the spacing between layout items: 1px. */
   gap: 1px;
-  /* Align multiple layout tracks within the container: center. */
   align-content: center;
   /* Distribute children along the main axis: center. */
   justify-content: center;
-  /* Round the element corners: 50%. */
   border-radius: 50%;
-  /* Set the background fill: #f0f3e8. */
   background: #f0f3e8;
   /* Set the text size: 12px. */
   font-size: 12px;
-  /* Set the text weight: 550. */
   font-weight: 550;
-  /* Set the foreground text or icon color: #798865. */
   color: #798865;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .progress-ring small. */
 .progress-ring small {
-  /* Set the text size: 8px. */
   font-size: 8px;
-  /* Override cross-axis alignment for this item: center. */
   align-self: center;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .progress-note h3. */
 .progress-note h3 {
-  /* Set the text size: 12px. */
   font-size: 12px;
-  /* Set the text weight: 550. */
   font-weight: 550;
   /* Set the foreground text or icon color: #697951. */
   color: #697951;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .progress-note p. */
 .progress-note p {
   /* Set the text size: 10px. */
   font-size: 10px;
-  /* Set the foreground text or icon color: #98a088. */
   color: #98a088;
-  /* Set outer space above the element: 5px. */
   margin-top: 5px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .progress-note > a. */
 .progress-note > a {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 9px. */
   gap: 9px;
-  /* Set outer space on the left: auto. */
   margin-left: auto;
-  /* Set the foreground text or icon color: #7d8e67. */
   color: #7d8e67;
   /* Set the text size: 10px. */
   font-size: 10px;
-  /* Control whitespace preservation and line wrapping: nowrap. */
   white-space: nowrap;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .progress-note > a:hover. */
 .progress-note > a:hover {
-  /* Set the foreground text or icon color: #354d24. */
   color: #354d24;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .page-footer. */
 .page-footer {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
   /* Set space inside this element: 31px 49px 23px. */
   padding: 31px 49px 23px;
-  /* Set the foreground text or icon color: #a0a893. */
   color: #a0a893;
-  /* Set the text size: 9px. */
   font-size: 9px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .page-footer > span:last-child. */
 .page-footer > span:last-child {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 6px. */
   gap: 6px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .modal. */
 .modal {
   /* Set the element width: min(510px, calc(100vw - 32px)). */
   width: min(510px, calc(100vw - 32px));
-  /* Limit the height before overflow handling applies: calc(100dvh - 40px). */
   max-height: calc(100dvh - 40px);
-  /* Set space inside this element: 28px. */
   padding: 28px;
   /* Define the border width, style, and color: 1px solid #e0e5d6. */
   border: 1px solid #e0e5d6;
-  /* Round the element corners: 14px. */
   border-radius: 14px;
-  /* Set the background fill: #fcfdf9. */
   background: #fcfdf9;
   /* Set the foreground text or icon color: var(--ink). */
   color: var(--ink);
-  /* Add the specified shadow: 0 30px 100px #17211335. */
   box-shadow: 0 30px 100px #17211335;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .modal::backdrop. */
 .modal::backdrop {
-  /* Set the background fill: #1d271e75. */
   background: #1d271e75;
-  /* Filter the content visible behind this surface: blur(3px). */
   backdrop-filter: blur(3px);
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .modal-heading. */
 .modal-heading {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: flex-start. */
   align-items: flex-start;
   /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
-  /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Set outer space below the element: 27px. */
   margin-bottom: 27px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .modal-heading .eyebrow. */
 .modal-heading .eyebrow {
-  /* Set the text size: 8px. */
   font-size: 8px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .modal-heading h2. */
 .modal-heading h2 {
-  /* Choose the preferred typefaces and their fallbacks: 'Manrope', sans-serif. */
   font-family: 'Manrope', sans-serif;
-  /* Set the text size: 24px. */
   font-size: 24px;
   /* Adjust spacing between characters: -0.9px. */
   letter-spacing: -0.9px;
-  /* Set the text weight: 600. */
   font-weight: 600;
-  /* Set outer space above the element: 9px. */
   margin-top: 9px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .form-fields. */
 .form-fields {
-  /* Define the border width, style, and color: 0. */
   border: 0;
-  /* Set space inside this element: 0. */
   padding: 0;
   /* Set space outside this element: 0. */
   margin: 0;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Arrange flex items horizontally or vertically: column. */
   flex-direction: column;
   /* Set the spacing between layout items: 19px. */
   gap: 19px;
-  /* Prevent the element from shrinking below this width: 0. */
   min-width: 0;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .form-fields label. */
 .form-fields label {
-  /* Choose the layout mode or hide the element: block. */
   display: block;
-  /* Set the text size: 11px. */
   font-size: 11px;
   /* Set the foreground text or icon color: #67765b. */
   color: #67765b;
-  /* Set the text weight: 550. */
   font-weight: 550;
-  /* Prevent the element from shrinking below this width: 0. */
   min-width: 0;
-  /* Finish this style rule or responsive block. */
 }
 /* Include .form-fields input in this group of selectors. */
 .form-fields input,
-/* Include .form-fields textarea in this group of selectors. */
 .form-fields textarea,
-/* Style elements matching .form-fields select. */
 .form-fields select {
   /* Choose the layout mode or hide the element: block. */
   display: block;
-  /* Set the element width: 100%. */
   width: 100%;
-  /* Set space inside this element: 11px 12px. */
   padding: 11px 12px;
   /* Set the text size: 12px. */
   font-size: 12px;
-  /* Set the foreground text or icon color: #4b5941. */
   color: #4b5941;
-  /* Set the background fill: #fff. */
   background: #fff;
   /* Define the border width, style, and color: 1px solid #dee5d3. */
   border: 1px solid #dee5d3;
-  /* Round the element corners: 6px. */
   border-radius: 6px;
-  /* Set outer space above the element: 8px. */
   margin-top: 8px;
   /* Set the text weight: 400. */
   font-weight: 400;
-  /* Reserve at least this much height: 41px. */
   min-height: 41px;
-  /* Finish this style rule or responsive block. */
 }
 /* Include .form-fields input::placeholder in this group of selectors. */
 .form-fields input::placeholder,
-/* Style elements matching .form-fields textarea::placeholder. */
 .form-fields textarea::placeholder {
-  /* Set the foreground text or icon color: #a5ae99. */
   color: #a5ae99;
   /* Set the text size: 11px. */
   font-size: 11px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .form-fields textarea. */
 .form-fields textarea {
   /* Choose whether the user can resize this control: vertical. */
   resize: vertical;
-  /* Reserve at least this much height: 95px. */
   min-height: 95px;
-  /* Set the distance between lines of text: 1.7. */
   line-height: 1.7;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .form-grid. */
 .form-grid {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Define the widths of grid columns: 1fr 1fr. */
   grid-template-columns: 1fr 1fr;
   /* Set the spacing between layout items: 17px. */
   gap: 17px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .optional. */
 .optional {
   /* Set the text weight: 400. */
   font-weight: 400;
-  /* Set the text size: 9px. */
   font-size: 9px;
-  /* Set the foreground text or icon color: #a3ad95. */
   color: #a3ad95;
   /* Set outer space on the left: 5px. */
   margin-left: 5px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .required. */
 .required {
   /* Set the foreground text or icon color: #a68a61. */
   color: #a68a61;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .modal-actions. */
 .modal-actions {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Distribute children along the main axis: flex-end. */
   justify-content: flex-end;
-  /* Set the spacing between layout items: 9px. */
   gap: 9px;
   /* Set outer space above the element: 27px. */
   margin-top: 27px;
-  /* Set inner space above the content: 20px. */
   padding-top: 20px;
-  /* Style the top edge: 1px solid var(--line). */
   border-top: 1px solid var(--line);
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .delete-copy. */
 .delete-copy {
-  /* Set the text size: 13px. */
   font-size: 13px;
-  /* Set the distance between lines of text: 1.8. */
   line-height: 1.8;
   /* Set the foreground text or icon color: #7a8470. */
   color: #7a8470;
-  /* Allow long words or task titles to wrap: anywhere. */
   overflow-wrap: anywhere;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .form-error. */
 .form-error {
-  /* Set the text size: 12px. */
   font-size: 12px;
-  /* Set the foreground text or icon color: #ad5546. */
   color: #ad5546;
   /* Set space inside this element: 13px 0 0. */
   padding: 13px 0 0;
-  /* Set the distance between lines of text: 1.6. */
   line-height: 1.6;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .action-error. */
 .action-error {
-  /* Set the foreground text or icon color: #a75d4a. */
   color: #a75d4a;
-  /* Set the background fill: #fcf2ec. */
   background: #fcf2ec;
   /* Set space inside this element: 12px 20px. */
   padding: 12px 20px;
-  /* Set the text size: 12px. */
   font-size: 12px;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .toast. */
 .toast {
-  /* Choose normal, relative, absolute, sticky, or fixed positioning: fixed. */
   position: fixed;
-  /* Set the bottom positioning offset: 25px. */
   bottom: 25px;
   /* Set the left positioning offset: calc(50% + 124px). */
   left: calc(50% + 124px);
-  /* Move, rotate, or scale the visual element: translateX(-50%). */
   transform: translateX(-50%);
-  /* Limit how wide this element can grow: calc(100vw - 35px). */
   max-width: calc(100vw - 35px);
   /* Set the background fill: #384b31. */
   background: #384b31;
-  /* Set the foreground text or icon color: #f0f5e7. */
   color: #f0f5e7;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 10px. */
   gap: 10px;
-  /* Round the element corners: 8px. */
   border-radius: 8px;
   /* Add the specified shadow: 0 8px 30px #2c3b2725. */
   box-shadow: 0 8px 30px #2c3b2725;
-  /* Set space inside this element: 14px 15px. */
   padding: 14px 15px;
-  /* Set the text size: 12px. */
   font-size: 12px;
   /* Choose the stacking order of positioned elements: 50. */
   z-index: 50;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .toast > svg. */
 .toast > svg {
   /* Set the foreground text or icon color: #bdd599. */
   color: #bdd599;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .toast button. */
 .toast button {
   /* Set the foreground text or icon color: #c5d3b8. */
   color: #c5d3b8;
-  /* Set the background fill: none. */
   background: none;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
   /* Set space inside this element: 3px. */
   padding: 3px;
-  /* Set outer space on the left: 15px. */
   margin-left: 15px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .empty-state. */
 .empty-state {
-  /* Set space inside this element: 48px 20px 42px. */
   padding: 48px 20px 42px;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
   /* Arrange flex items horizontally or vertically: column. */
   flex-direction: column;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Align inline text within its container: center. */
   text-align: center;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .empty-icon. */
 .empty-icon {
-  /* Choose normal, relative, absolute, sticky, or fixed positioning: relative. */
   position: relative;
-  /* Set the background fill: #edf2e3. */
   background: #edf2e3;
   /* Define the border width, style, and color: 1px solid #e6ebda. */
   border: 1px solid #e6ebda;
-  /* Set the foreground text or icon color: #8da079. */
   color: #8da079;
-  /* Set the element width: 66px. */
   width: 66px;
   /* Set the element height: 66px. */
   height: 66px;
-  /* Round the element corners: 20px. */
   border-radius: 20px;
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
   /* Set both alignment directions for grid items: center. */
   place-items: center;
-  /* Move, rotate, or scale the visual element: rotate(-6deg). */
   transform: rotate(-6deg);
-  /* Set outer space below the element: 22px. */
   margin-bottom: 22px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .empty-icon span. */
 .empty-icon span {
-  /* Choose normal, relative, absolute, sticky, or fixed positioning: absolute. */
   position: absolute;
-  /* Set the bottom positioning offset: 1px. */
   bottom: 1px;
   /* Set the right positioning offset: -5px. */
   right: -5px;
-  /* Define the border width, style, and color: 3px solid #fff. */
   border: 3px solid #fff;
-  /* Set the background fill: #becfa4. */
   background: #becfa4;
   /* Set the foreground text or icon color: #fff. */
   color: #fff;
-  /* Round the element corners: 50%. */
   border-radius: 50%;
-  /* Set the element height: 25px. */
   height: 25px;
   /* Set the element width: 25px. */
   width: 25px;
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Set both alignment directions for grid items: center. */
   place-items: center;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .empty-state h3. */
 .empty-state h3 {
-  /* Choose the preferred typefaces and their fallbacks: 'Manrope', sans-serif. */
   font-family: 'Manrope', sans-serif;
-  /* Adjust spacing between characters: -0.5px. */
   letter-spacing: -0.5px;
   /* Set the text size: 18px. */
   font-size: 18px;
-  /* Set the text weight: 600. */
   font-weight: 600;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .empty-state p. */
 .empty-state p {
-  /* Set the text size: 11px. */
   font-size: 11px;
-  /* Set the distance between lines of text: 1.7. */
   line-height: 1.7;
   /* Set the foreground text or icon color: #949d87. */
   color: #949d87;
-  /* Set space outside this element: 10px 0 21px. */
   margin: 10px 0 21px;
-  /* Limit how wide this element can grow: 320px. */
   max-width: 320px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .empty-state .button. */
 .empty-state .button {
-  /* Set the text size: 10px. */
   font-size: 10px;
-  /* Reserve at least this much height: 36px. */
   min-height: 36px;
   /* Set space inside this element: 9px 12px. */
   padding: 9px 12px;
-  /* Finish this style rule or responsive block. */
 }
-/* Include .loading-state in this group of selectors. */
 .loading-state,
 /* Style elements matching .error-state. */
 .error-state {
-  /* Reserve at least this much height: 240px. */
   min-height: 240px;
-  /* Set space inside this element: 35px 20px. */
   padding: 35px 20px;
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Arrange flex items horizontally or vertically: column. */
   flex-direction: column;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Distribute children along the main axis: center. */
   justify-content: center;
-  /* Align inline text within its container: center. */
   text-align: center;
-  /* Set the spacing between layout items: 17px. */
   gap: 17px;
   /* Set the text size: 12px. */
   font-size: 12px;
-  /* Set the foreground text or icon color: #919c83. */
   color: #919c83;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .error-state h2. */
 .error-state h2 {
-  /* Set the foreground text or icon color: #566548. */
   color: #566548;
-  /* Set the text size: 19px. */
   font-size: 19px;
   /* Set the text weight: 500. */
   font-weight: 500;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .error-state p. */
 .error-state p {
   /* Set the distance between lines of text: 1.7. */
   line-height: 1.7;
-  /* Limit how wide this element can grow: 400px. */
   max-width: 400px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .spinner. */
 .spinner {
-  /* Set the element width: 24px. */
   width: 24px;
-  /* Set the element height: 24px. */
   height: 24px;
   /* Define the border width, style, and color: 2px solid #e2e8d7. */
   border: 2px solid #e2e8d7;
-  /* Color the top border segment: #8b9d73. */
   border-top-color: #8b9d73;
-  /* Round the element corners: 50%. */
   border-radius: 50%;
   /* Run the named animation with these timing settings: spin 1s linear infinite. */
   animation: spin 1s linear infinite;
-  /* Finish this style rule or responsive block. */
 }
-/* Define the spin animation sequence. */
 @keyframes spin {
   /* Style elements matching to. */
   to {
-    /* Move, rotate, or scale the visual element: rotate(360deg). */
     transform: rotate(360deg);
-    /* Finish this style rule or responsive block. */
   }
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .help-content. */
 .help-content {
-  /* Set the text size: 13px. */
   font-size: 13px;
-  /* Set the distance between lines of text: 1.8. */
   line-height: 1.8;
   /* Set the foreground text or icon color: #758469. */
   color: #758469;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .help-content ul. */
 .help-content ul {
   /* Set inner space on the left: 18px. */
   padding-left: 18px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .help-content li. */
 .help-content li {
   /* Set space outside this element: 10px 0. */
   margin: 10px 0;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .back-link. */
 .back-link {
   /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 9px. */
   gap: 9px;
   /* Set the text size: 11px. */
   font-size: 11px;
-  /* Set the foreground text or icon color: #8b957e. */
   color: #8b957e;
-  /* Set outer space below the element: 36px. */
   margin-bottom: 36px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .back-link:hover. */
 .back-link:hover {
-  /* Set the foreground text or icon color: var(--olive). */
   color: var(--olive);
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-intro. */
 .detail-intro {
-  /* Set outer space below the element: 32px. */
   margin-bottom: 32px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-title-row. */
 .detail-title-row {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: flex-start. */
   align-items: flex-start;
   /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
-  /* Set the spacing between layout items: 24px. */
   gap: 24px;
-  /* Set outer space above the element: 16px. */
   margin-top: 16px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-title-row h1. */
 .detail-title-row h1 {
-  /* Set the text size: 34px. */
   font-size: 34px;
-  /* Set the distance between lines of text: 1.4. */
   line-height: 1.4;
   /* Limit how wide this element can grow: 780px. */
   max-width: 780px;
-  /* Allow long words or task titles to wrap: anywhere. */
   overflow-wrap: anywhere;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .finished-title. */
 .finished-title {
-  /* Set the foreground text or icon color: #879776. */
   color: #879776;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-tags. */
 .detail-tags {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Allow flex items to wrap onto another line: wrap. */
   flex-wrap: wrap;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 10px. */
   gap: 10px;
-  /* Set outer space above the element: 18px. */
   margin-top: 18px;
-  /* Finish this style rule or responsive block. */
 }
 /* Include .detail-tags .project-badge in this group of selectors. */
 .detail-tags .project-badge,
-/* Style elements matching .detail-tags .priority-badge. */
 .detail-tags .priority-badge {
-  /* Set the text size: 10px. */
   font-size: 10px;
   /* Set space inside this element: 6px 9px. */
   padding: 6px 9px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .status-badge. */
 .status-badge {
   /* Choose the layout mode or hide the element: inline-flex. */
   display: inline-flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 6px. */
   gap: 6px;
   /* Set the text size: 10px. */
   font-size: 10px;
-  /* Set the foreground text or icon color: #92987f. */
   color: #92987f;
-  /* Set the background fill: #f0f1e8. */
   background: #f0f1e8;
   /* Set space inside this element: 6px 9px. */
   padding: 6px 9px;
-  /* Round the element corners: 4px. */
   border-radius: 4px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .status-badge.done. */
 .status-badge.done {
-  /* Set the foreground text or icon color: #789361. */
   color: #789361;
-  /* Set the background fill: #edf3e5. */
   background: #edf3e5;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-grid. */
 .detail-grid {
-  /* Choose the layout mode or hide the element: grid. */
   display: grid;
-  /* Define the widths of grid columns: minmax(0, 1fr) 280px. */
   grid-template-columns: minmax(0, 1fr) 280px;
   /* Align children across the layout’s cross axis: start. */
   align-items: start;
-  /* Set the spacing between layout items: 23px. */
   gap: 23px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-card. */
 .detail-card {
-  /* Set the background fill: #fff. */
   background: #fff;
-  /* Define the border width, style, and color: 1px solid #e3e8db. */
   border: 1px solid #e3e8db;
   /* Round the element corners: 11px. */
   border-radius: 11px;
-  /* Control whether overflowing content is clipped, visible, or scrollable: hidden. */
   overflow: hidden;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-complete. */
 .detail-complete {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 14px. */
   gap: 14px;
-  /* Set the element width: calc(100% - 44px). */
   width: calc(100% - 44px);
-  /* Set space outside this element: 22px. */
   margin: 22px;
   /* Set space inside this element: 21px 18px. */
   padding: 21px 18px;
-  /* Align inline text within its container: left. */
   text-align: left;
-  /* Define the border width, style, and color: 1px solid #e4e9da. */
   border: 1px solid #e4e9da;
   /* Round the element corners: 7px. */
   border-radius: 7px;
-  /* Set the background fill: #f7f9f2. */
   background: #f7f9f2;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-complete:hover. */
 .detail-complete:hover {
-  /* Set the background fill: #f0f5e7. */
   background: #f0f5e7;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-complete strong. */
 .detail-complete strong {
-  /* Choose the layout mode or hide the element: block. */
   display: block;
-  /* Set the text size: 13px. */
   font-size: 13px;
   /* Set the text weight: 500. */
   font-weight: 500;
-  /* Set the foreground text or icon color: #71815d. */
   color: #71815d;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-complete small. */
 .detail-complete small {
-  /* Choose the layout mode or hide the element: block. */
   display: block;
-  /* Set the text size: 10px. */
   font-size: 10px;
   /* Set the foreground text or icon color: #9ba88b. */
   color: #9ba88b;
-  /* Set outer space above the element: 6px. */
   margin-top: 6px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-complete > svg:last-child. */
 .detail-complete > svg:last-child {
-  /* Set outer space on the left: auto. */
   margin-left: auto;
-  /* Set the foreground text or icon color: #a1b68b. */
   color: #a1b68b;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .description-section. */
 .description-section {
-  /* Set space inside this element: 14px 27px 32px. */
   padding: 14px 27px 32px;
-  /* Reserve at least this much height: 226px. */
   min-height: 226px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .description-section h2. */
 .description-section h2 {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 9px. */
   gap: 9px;
-  /* Set the text size: 13px. */
   font-size: 13px;
-  /* Set the foreground text or icon color: #6c7c5e. */
   color: #6c7c5e;
   /* Set the text weight: 500. */
   font-weight: 500;
-  /* Set outer space below the element: 19px. */
   margin-bottom: 19px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .task-description. */
 .task-description {
-  /* Control whitespace preservation and line wrapping: pre-wrap. */
   white-space: pre-wrap;
-  /* Allow long words or task titles to wrap: anywhere. */
   overflow-wrap: anywhere;
   /* Set the text size: 13px. */
   font-size: 13px;
-  /* Set the distance between lines of text: 1.95. */
   line-height: 1.95;
-  /* Set the foreground text or icon color: #7c8772. */
   color: #7c8772;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .no-description p. */
 .no-description p {
-  /* Set the text size: 12px. */
   font-size: 12px;
-  /* Set the foreground text or icon color: #a3ab97. */
   color: #a3ab97;
   /* Set outer space below the element: 15px. */
   margin-bottom: 15px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .text-button. */
 .text-button {
   /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 6px. */
   gap: 6px;
   /* Set the text size: 11px. */
   font-size: 11px;
-  /* Set the foreground text or icon color: #788e61. */
   color: #788e61;
-  /* Set the background fill: none. */
   background: none;
   /* Set space inside this element: 0. */
   padding: 0;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .detail-card-footer. */
 .detail-card-footer {
   /* Set space inside this element: 18px 26px. */
   padding: 18px 26px;
-  /* Set the background fill: #fcfdf9. */
   background: #fcfdf9;
-  /* Style the top edge: 1px solid var(--line). */
   border-top: 1px solid var(--line);
   /* Set the foreground text or icon color: #a2ac94. */
   color: #a2ac94;
-  /* Set the text size: 9px. */
   font-size: 9px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-card-footer > span. */
 .detail-card-footer > span {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 7px. */
   gap: 7px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .properties. */
 .properties {
   /* Set space inside this element: 24px. */
   padding: 24px;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .properties h2. */
 .properties h2 {
   /* Set the text size: 13px. */
   font-size: 13px;
-  /* Set the text weight: 550. */
   font-weight: 550;
-  /* Set the foreground text or icon color: #617252. */
   color: #617252;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .properties dl. */
 .properties dl {
-  /* Set space outside this element: 23px 0. */
   margin: 23px 0;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .properties dl > div. */
 .properties dl > div {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Distribute children along the main axis: space-between. */
   justify-content: space-between;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 12px. */
   gap: 12px;
-  /* Set space outside this element: 20px 0. */
   margin: 20px 0;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .properties dt. */
 .properties dt {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Align children across the layout’s cross axis: center. */
   align-items: center;
   /* Set the spacing between layout items: 8px. */
   gap: 8px;
-  /* Set the text size: 10px. */
   font-size: 10px;
-  /* Set the foreground text or icon color: #9ba58d. */
   color: #9ba58d;
   /* Control whitespace preservation and line wrapping: nowrap. */
   white-space: nowrap;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .properties dd. */
 .properties dd {
   /* Set space outside this element: 0. */
   margin: 0;
-  /* Set the text size: 11px. */
   font-size: 11px;
-  /* Set the foreground text or icon color: #7f8c70. */
   color: #7f8c70;
   /* Align inline text within its container: right. */
   text-align: right;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .properties dd.date-property. */
 .properties dd.date-property {
   /* Set the text size: 9px. */
   font-size: 9px;
-  /* Set the distance between lines of text: 1.7. */
   line-height: 1.7;
-  /* Limit how wide this element can grow: 110px. */
   max-width: 110px;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .delete-task-button. */
 .delete-task-button {
-  /* Set the element width: 100%. */
   width: 100%;
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Distribute children along the main axis: center. */
   justify-content: center;
-  /* Set the spacing between layout items: 8px. */
   gap: 8px;
   /* Set inner space above the content: 20px. */
   padding-top: 20px;
-  /* Style the top edge: 1px solid var(--line). */
   border-top: 1px solid var(--line);
-  /* Set the text size: 11px. */
   font-size: 11px;
   /* Set the foreground text or icon color: #b88c7e. */
   color: #b88c7e;
-  /* Set the background fill: none. */
   background: none;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .delete-task-button:hover. */
 .delete-task-button:hover {
-  /* Set the foreground text or icon color: #a44330. */
   color: #a44330;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-encouragement. */
 .detail-encouragement {
-  /* Choose the layout mode or hide the element: flex. */
   display: flex;
-  /* Distribute children along the main axis: center. */
   justify-content: center;
   /* Align children across the layout’s cross axis: center. */
   align-items: center;
-  /* Set the spacing between layout items: 13px. */
   gap: 13px;
-  /* Set space outside this element: 45px 0. */
   margin: 45px 0;
   /* Set the foreground text or icon color: #a0ac8e. */
   color: #a0ac8e;
-  /* Finish this style rule or responsive block. */
 }
-/* Style elements matching .detail-encouragement > span. */
 .detail-encouragement > span {
   /* Set the text size: 39px. */
   font-size: 39px;
-  /* Set the foreground text or icon color: #b8c29c. */
   color: #b8c29c;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-encouragement p. */
 .detail-encouragement p {
-  /* Set the text size: 11px. */
   font-size: 11px;
-  /* Set the distance between lines of text: 1.8. */
   line-height: 1.8;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .detail-encouragement strong. */
 .detail-encouragement strong {
-  /* Set the text weight: 500. */
   font-weight: 500;
-  /* Set the foreground text or icon color: #8e9d79. */
   color: #8e9d79;
-  /* Finish this style rule or responsive block. */
 }
 /* Style elements matching .sidebar-shade. */
 .sidebar-shade {
-  /* Choose the layout mode or hide the element: none. */
   display: none;
-  /* Finish this style rule or responsive block. */
 }
 /* Apply these overrides only when (min-width: 1600px). */
 @media (min-width: 1600px) {
-  /* Style elements matching main. */
   main {
-    /* Set inner space above the content: 55px. */
     padding-top: 55px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .page-intro. */
   .page-intro {
-    /* Set outer space below the element: 40px. */
     margin-bottom: 40px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .overview. */
   .overview {
-    /* Set outer space below the element: 45px. */
     margin-bottom: 45px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .task-row. */
   .task-row {
-    /* Reserve at least this much height: 91px. */
     min-height: 91px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Finish this style rule or responsive block. */
 }
 /* Apply these overrides only when (max-width: 1200px). */
 @media (max-width: 1200px) {
-  /* Style elements matching .sidebar. */
   .sidebar {
-    /* Set the element width: 220px. */
     width: 220px;
     /* Set inner space on the left: 17px. */
     padding-left: 17px;
-    /* Set inner space on the right: 17px. */
     padding-right: 17px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .main-shell. */
   .main-shell {
-    /* Set outer space on the left: 220px. */
     margin-left: 220px;
-    /* Set the element width: calc(100% - 220px). */
     width: calc(100% - 220px);
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching main. */
   main {
-    /* Set inner space on the left: 30px. */
     padding-left: 30px;
-    /* Set inner space on the right: 30px. */
     padding-right: 30px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .topbar. */
   .topbar {
-    /* Set inner space on the left: 30px. */
     padding-left: 30px;
-    /* Set inner space on the right: 30px. */
     padding-right: 30px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .page-footer. */
   .page-footer {
-    /* Set inner space on the left: 30px. */
     padding-left: 30px;
-    /* Set inner space on the right: 30px. */
     padding-right: 30px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .stat-card. */
   .stat-card {
-    /* Set space inside this element: 19px 15px. */
     padding: 19px 15px;
-    /* Finish this style rule or responsive block. */
   }
   /* Include .list-column-labels in this group of selectors. */
   .list-column-labels,
-  /* Style elements matching .task-row. */
   .task-row {
-    /* Define the widths of grid columns: minmax(140px, 1fr) 86px 75px 75px 70px. */
     grid-template-columns: minmax(140px, 1fr) 86px 75px 75px 70px;
     /* Set the spacing between layout items: 7px. */
     gap: 7px;
-    /* Set inner space on the left: 19px. */
     padding-left: 19px;
-    /* Set inner space on the right: 14px. */
     padding-right: 14px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .row-actions .icon-button. */
   .row-actions .icon-button {
-    /* Prevent the element from shrinking below this width: 23px. */
     min-width: 23px;
-    /* Set space inside this element: 4px. */
     padding: 4px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .task-main. */
   .task-main {
-    /* Set the spacing between layout items: 11px. */
     gap: 11px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .toast. */
   .toast {
-    /* Set the left positioning offset: calc(50% + 110px). */
     left: calc(50% + 110px);
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .detail-grid. */
   .detail-grid {
-    /* Define the widths of grid columns: minmax(0, 1fr) 248px. */
     grid-template-columns: minmax(0, 1fr) 248px;
-    /* Set the spacing between layout items: 17px. */
     gap: 17px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .properties. */
   .properties {
-    /* Set space inside this element: 20px. */
     padding: 20px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Finish this style rule or responsive block. */
 }
 /* Apply these overrides only when (max-width: 1000px). */
 @media (max-width: 1000px) {
-  /* Style elements matching .sidebar. */
   .sidebar {
-    /* Set the element width: 200px. */
     width: 200px;
     /* Set inner space on the left: 13px. */
     padding-left: 13px;
-    /* Set inner space on the right: 13px. */
     padding-right: 13px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .main-shell. */
   .main-shell {
-    /* Set outer space on the left: 200px. */
     margin-left: 200px;
-    /* Set the element width: calc(100% - 200px). */
     width: calc(100% - 200px);
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .workspace. */
   .workspace {
-    /* Set the spacing between layout items: 7px. */
     gap: 7px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .workspace div span. */
   .workspace div span {
-    /* Set the text size: 8px. */
     font-size: 8px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .workspace > svg. */
   .workspace > svg {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching main. */
   main {
-    /* Set inner space on the left: 24px. */
     padding-left: 24px;
-    /* Set inner space on the right: 24px. */
     padding-right: 24px;
-    /* Finish this style rule or responsive block. */
   }
   /* Include .topbar in this group of selectors. */
   .topbar,
-  /* Style elements matching .page-footer. */
   .page-footer {
-    /* Set inner space on the left: 24px. */
     padding-left: 24px;
     /* Set inner space on the right: 24px. */
     padding-right: 24px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .overview. */
   .overview {
     /* Set the spacing between layout items: 10px. */
     gap: 10px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .stat-icon. */
   .stat-icon {
     /* Set the element width: 33px. */
     width: 33px;
-    /* Set the element height: 33px. */
     height: 33px;
-    /* Round the element corners: 9px. */
     border-radius: 9px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .stat-icon svg. */
   .stat-icon svg {
-    /* Set the element width: 18px. */
     width: 18px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .stat-card. */
   .stat-card {
-    /* Set space inside this element: 17px 13px. */
     padding: 17px 13px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .stat-card strong span. */
   .stat-card strong span {
-    /* Set the text size: 8px. */
     font-size: 8px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .section-decoration. */
   .section-decoration {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Include .list-column-labels in this group of selectors. */
   .list-column-labels,
-  /* Style elements matching .task-row. */
   .task-row {
-    /* Define the widths of grid columns: minmax(140px, 1fr) 75px 70px 65px. */
     grid-template-columns: minmax(140px, 1fr) 75px 70px 65px;
-    /* Finish this style rule or responsive block. */
   }
   /* Include .list-column-labels > span:nth-child(2) in this group of selectors. */
   .list-column-labels > span:nth-child(2),
-  /* Style elements matching .row-project. */
   .row-project {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .task-toolbar. */
   .task-toolbar {
-    /* Set space inside this element: 12px 13px. */
     padding: 12px 13px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .filter-row. */
   .filter-row {
-    /* Set space inside this element: 12px 19px. */
     padding: 12px 19px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .status-tabs button. */
   .status-tabs button {
-    /* Set space inside this element: 8px. */
     padding: 8px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .status-tabs button svg. */
   .status-tabs button svg {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .inline-add > span. */
   .inline-add > span {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .progress-note. */
   .progress-note {
-    /* Set space inside this element: 18px. */
     padding: 18px;
-    /* Set the spacing between layout items: 12px. */
     gap: 12px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .progress-note > a. */
   .progress-note > a {
-    /* Set the text size: 9px. */
     font-size: 9px;
-    /* Set the spacing between layout items: 4px. */
     gap: 4px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .progress-note p. */
   .progress-note p {
-    /* Set the text size: 9px. */
     font-size: 9px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .toast. */
   .toast {
-    /* Set the left positioning offset: calc(50% + 100px). */
     left: calc(50% + 100px);
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .detail-grid. */
   .detail-grid {
-    /* Define the widths of grid columns: 1fr. */
     grid-template-columns: 1fr;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .detail-title-row h1. */
   .detail-title-row h1 {
-    /* Set the text size: 29px. */
     font-size: 29px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .properties dl. */
   .properties dl {
-    /* Choose the layout mode or hide the element: grid. */
     display: grid;
-    /* Define the widths of grid columns: repeat(2, 1fr). */
     grid-template-columns: repeat(2, 1fr);
     /* Set the spacing between layout items: 6px 30px. */
     gap: 6px 30px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .properties dl > div. */
   .properties dl > div {
     /* Set space outside this element: 8px 0. */
     margin: 8px 0;
-    /* Finish this style rule or responsive block. */
   }
-  /* Finish this style rule or responsive block. */
 }
 /* Apply these overrides only when (max-width: 760px). */
 @media (max-width: 760px) {
-  /* Style elements matching .sidebar. */
   .sidebar {
-    /* Move, rotate, or scale the visual element: translateX(-100%). */
     transform: translateX(-100%);
     /* Animate changes to the listed properties: transform 0.2s. */
     transition: transform 0.2s;
-    /* Set the element width: 248px. */
     width: 248px;
-    /* Set space inside this element: 30px 22px 18px. */
     padding: 30px 22px 18px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .sidebar.is-open. */
   .sidebar.is-open {
-    /* Move, rotate, or scale the visual element: translateX(0). */
     transform: translateX(0);
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .sidebar-shade. */
   .sidebar-shade {
-    /* Choose the layout mode or hide the element: block. */
     display: block;
-    /* Choose normal, relative, absolute, sticky, or fixed positioning: fixed. */
     position: fixed;
     /* Set offsets from all four edges: 0. */
     inset: 0;
-    /* Choose the stacking order of positioned elements: 19. */
     z-index: 19;
-    /* Set the background fill: #26312066. */
     background: #26312066;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .main-shell. */
   .main-shell {
-    /* Set the element width: 100%. */
     width: 100%;
-    /* Set outer space on the left: 0. */
     margin-left: 0;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .topbar. */
   .topbar {
-    /* Set the element height: 62px. */
     height: 62px;
-    /* Set space inside this element: 0 22px. */
     padding: 0 22px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .mobile-menu. */
   .mobile-menu {
-    /* Choose the layout mode or hide the element: inline-flex !important. */
     display: inline-flex !important;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .topbar > div. */
   .topbar > div {
-    /* Set the spacing between layout items: 8px. */
     gap: 8px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching main. */
   main {
-    /* Set space inside this element: 30px 22px 0. */
     padding: 30px 22px 0;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .page-intro h1. */
   .page-intro h1 {
-    /* Set the text size: 32px. */
     font-size: 32px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .page-intro. */
   .page-intro {
-    /* Set outer space below the element: 26px. */
     margin-bottom: 26px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .overview. */
   .overview {
-    /* Set outer space below the element: 28px. */
     margin-bottom: 28px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .sidebar-bottom. */
   .sidebar-bottom {
-    /* Set inner space above the content: 35px. */
     padding-top: 35px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .stat-card. */
   .stat-card {
-    /* Set space inside this element: 17px. */
     padding: 17px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .stat-card strong. */
   .stat-card strong {
-    /* Set the text size: 27px. */
     font-size: 27px;
-    /* Finish this style rule or responsive block. */
   }
   /* Include .task-row in this group of selectors. */
   .task-row,
-  /* Style elements matching .list-column-labels. */
   .list-column-labels {
-    /* Define the widths of grid columns: minmax(140px, 1fr) 85px 90px 80px. */
     grid-template-columns: minmax(140px, 1fr) 85px 90px 80px;
     /* Set inner space on the left: 20px. */
     padding-left: 20px;
-    /* Set inner space on the right: 16px. */
     padding-right: 16px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .row-actions .icon-button:not(.open-task). */
   .row-actions .icon-button:not(.open-task) {
-    /* Set the element transparency: 1. */
     opacity: 1;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .status-tabs button. */
   .status-tabs button {
-    /* Set space inside this element: 8px 10px. */
     padding: 8px 10px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .status-tabs button svg. */
   .status-tabs button svg {
-    /* Choose the layout mode or hide the element: block. */
     display: block;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .toast. */
   .toast {
-    /* Set the left positioning offset: 50%. */
     left: 50%;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .page-footer. */
   .page-footer {
-    /* Set space inside this element: 25px 22px 20px. */
     padding: 25px 22px 20px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .detail-grid. */
   .detail-grid {
-    /* Define the widths of grid columns: minmax(0, 1fr) 230px. */
     grid-template-columns: minmax(0, 1fr) 230px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .properties dl. */
   .properties dl {
-    /* Choose the layout mode or hide the element: block. */
     display: block;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .properties dl > div. */
   .properties dl > div {
-    /* Set space outside this element: 20px 0. */
     margin: 20px 0;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .detail-title-row h1. */
   .detail-title-row h1 {
-    /* Set the text size: 30px. */
     font-size: 30px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Finish this style rule or responsive block. */
 }
 /* Apply these overrides only when (max-width: 580px). */
 @media (max-width: 580px) {
-  /* Style elements matching .topbar-date. */
   .topbar-date {
-    /* Set the text size: 9px. */
     font-size: 9px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .topbar-date svg. */
   .topbar-date svg {
-    /* Set the element width: 14px. */
     width: 14px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .topbar > div > span. */
   .topbar > div > span {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .topbar > div > svg. */
   .topbar > div > svg {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .topbar. */
   .topbar {
-    /* Set space inside this element: 0 16px. */
     padding: 0 16px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching main. */
   main {
-    /* Set space inside this element: 27px 17px 0. */
     padding: 27px 17px 0;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .eyebrow. */
   .eyebrow {
-    /* Set the text size: 8px. */
     font-size: 8px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .page-intro h1. */
   .page-intro h1 {
-    /* Set the text size: 29px. */
     font-size: 29px;
-    /* Adjust spacing between characters: -1.2px. */
     letter-spacing: -1.2px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .page-intro p. */
   .page-intro p {
-    /* Set the text size: 10px. */
     font-size: 10px;
-    /* Limit how wide this element can grow: 190px. */
     max-width: 190px;
     /* Set the distance between lines of text: 1.6. */
     line-height: 1.6;
-    /* Set outer space above the element: 10px. */
     margin-top: 10px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .page-intro. */
   .page-intro {
-    /* Set the spacing between layout items: 8px. */
     gap: 8px;
-    /* Align children across the layout’s cross axis: flex-end. */
     align-items: flex-end;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .add-main. */
   .add-main {
-    /* Set the text size: 10px. */
     font-size: 10px;
-    /* Set space inside this element: 10px 12px. */
     padding: 10px 12px;
     /* Set space outside this element: 0 0 3px. */
     margin: 0 0 3px;
-    /* Set the spacing between layout items: 5px. */
     gap: 5px;
-    /* Reserve at least this much height: 36px. */
     min-height: 36px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .add-main svg. */
   .add-main svg {
-    /* Set the element width: 15px. */
     width: 15px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .overview. */
   .overview {
-    /* Set the spacing between layout items: 8px. */
     gap: 8px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .stat-card. */
   .stat-card {
-    /* Choose normal, relative, absolute, sticky, or fixed positioning: relative. */
     position: relative;
-    /* Set space inside this element: 15px 11px. */
     padding: 15px 11px;
     /* Choose the layout mode or hide the element: block. */
     display: block;
-    /* Reserve at least this much height: 110px. */
     min-height: 110px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .stat-icon. */
   .stat-icon {
-    /* Choose normal, relative, absolute, sticky, or fixed positioning: absolute. */
     position: absolute;
-    /* Set the right positioning offset: 9px. */
     right: 9px;
     /* Set the top positioning offset: 12px. */
     top: 12px;
-    /* Set the element width: 23px. */
     width: 23px;
-    /* Set the element height: 23px. */
     height: 23px;
     /* Round the element corners: 7px. */
     border-radius: 7px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .stat-icon svg. */
   .stat-icon svg {
     /* Set the element width: 13px. */
     width: 13px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .stat-label. */
   .stat-label {
     /* Set the text size: 9px. */
     font-size: 9px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .stat-card strong. */
   .stat-card strong {
     /* Set the text size: 24px. */
     font-size: 24px;
-    /* Set outer space above the element: 17px. */
     margin-top: 17px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .stat-card strong span. */
   .stat-card strong span {
-    /* Set the text size: 8px. */
     font-size: 8px;
-    /* Set the distance between lines of text: 1.5. */
     line-height: 1.5;
     /* Limit how wide this element can grow: 84px. */
     max-width: 84px;
-    /* Set outer space above the element: 5px. */
     margin-top: 5px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .section-heading h2. */
   .section-heading h2 {
-    /* Set the text size: 18px. */
     font-size: 18px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .section-heading p. */
   .section-heading p {
-    /* Set the text size: 10px. */
     font-size: 10px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .task-toolbar. */
   .task-toolbar {
-    /* Set space inside this element: 11px 10px. */
     padding: 11px 10px;
-    /* Set the spacing between layout items: 3px. */
     gap: 3px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .status-tabs. */
   .status-tabs {
-    /* Set the spacing between layout items: 2px. */
     gap: 2px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .status-tabs button. */
   .status-tabs button {
-    /* Set the text size: 9px. */
     font-size: 9px;
-    /* Set space inside this element: 8px. */
     padding: 8px;
     /* Set the spacing between layout items: 4px. */
     gap: 4px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .status-tabs button svg. */
   .status-tabs button svg {
     /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .sort-control. */
   .sort-control {
     /* Set the spacing between layout items: 4px. */
     gap: 4px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .sort-control > svg. */
   .sort-control > svg {
     /* Set the element width: 13px. */
     width: 13px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .sort-control select. */
   .sort-control select {
     /* Set the text size: 9px. */
     font-size: 9px;
-    /* Limit how wide this element can grow: 90px. */
     max-width: 90px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .filter-row. */
   .filter-row {
-    /* Set space inside this element: 10px 14px. */
     padding: 10px 14px;
-    /* Set the spacing between layout items: 10px. */
     gap: 10px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .search-field. */
   .search-field {
-    /* Set the spacing between layout items: 7px. */
     gap: 7px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .search-field input. */
   .search-field input {
-    /* Set the text size: 10px. */
     font-size: 10px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .search-field svg. */
   .search-field svg {
-    /* Set the element width: 15px. */
     width: 15px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .priority-filter select. */
   .priority-filter select {
-    /* Set the text size: 9px. */
     font-size: 9px;
-    /* Set space inside this element: 7px 5px. */
     padding: 7px 5px;
     /* Limit how wide this element can grow: 100px. */
     max-width: 100px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .list-column-labels. */
   .list-column-labels {
     /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .task-row. */
   .task-row {
     /* Choose the layout mode or hide the element: grid. */
     display: grid;
-    /* Define the widths of grid columns: minmax(0, 1fr) 64px. */
     grid-template-columns: minmax(0, 1fr) 64px;
-    /* Align children across the layout’s cross axis: start. */
     align-items: start;
     /* Set space inside this element: 17px 12px 17px 16px. */
     padding: 17px 12px 17px 16px;
-    /* Set the spacing between layout items: 8px. */
     gap: 8px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .task-main. */
   .task-main {
-    /* Set the spacing between layout items: 10px. */
     gap: 10px;
-    /* Align children across the layout’s cross axis: flex-start. */
     align-items: flex-start;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .task-main > .completion-control. */
   .task-main > .completion-control {
-    /* Set outer space above the element: 2px. */
     margin-top: 2px;
-    /* Set the element width: 18px. */
     width: 18px;
     /* Set the element height: 18px. */
     height: 18px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .task-title. */
   .task-title {
     /* Set the text size: 11px. */
     font-size: 11px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .task-text > p. */
   .task-text > p {
     /* Set the text size: 9px. */
     font-size: 9px;
-    /* Limit how wide this element can grow: 235px. */
     max-width: 235px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .mobile-task-meta. */
   .mobile-task-meta {
-    /* Choose the layout mode or hide the element: flex. */
     display: flex;
-    /* Align children across the layout’s cross axis: center. */
     align-items: center;
     /* Set the spacing between layout items: 8px. */
     gap: 8px;
-    /* Set the text size: 8px. */
     font-size: 8px;
-    /* Set the foreground text or icon color: #9ca58e. */
     color: #9ca58e;
     /* Set outer space above the element: 8px. */
     margin-top: 8px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .mobile-task-meta .project-badge. */
   .mobile-task-meta .project-badge {
     /* Set the text size: 8px. */
     font-size: 8px;
-    /* Set space inside this element: 3px 5px. */
     padding: 3px 5px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .row-priority. */
   .row-priority {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .row-date. */
   .row-date {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .row-actions. */
   .row-actions {
-    /* Override cross-axis alignment for this item: center. */
     align-self: center;
-    /* Set the spacing between layout items: 0. */
     gap: 0;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .row-actions .icon-button. */
   .row-actions .icon-button {
-    /* Prevent the element from shrinking below this width: 22px. */
     min-width: 22px;
-    /* Reserve at least this much height: 30px. */
     min-height: 30px;
     /* Set space inside this element: 3px. */
     padding: 3px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .row-actions .icon-button svg. */
   .row-actions .icon-button svg {
     /* Set the element width: 13px. */
     width: 13px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .inline-add. */
   .inline-add {
     /* Set space inside this element: 17px 16px. */
     padding: 17px 16px;
-    /* Set the text size: 10px. */
     font-size: 10px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .list-footer. */
   .list-footer {
-    /* Set space inside this element: 12px 15px. */
     padding: 12px 15px;
-    /* Set the text size: 8px. */
     font-size: 8px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .progress-note. */
   .progress-note {
-    /* Set space inside this element: 17px 14px. */
     padding: 17px 14px;
-    /* Set the spacing between layout items: 11px. */
     gap: 11px;
     /* Set outer space above the element: 19px. */
     margin-top: 19px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .progress-note h3. */
   .progress-note h3 {
     /* Set the text size: 11px. */
     font-size: 11px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .progress-note p. */
   .progress-note p {
     /* Set the text size: 9px. */
     font-size: 9px;
-    /* Set the distance between lines of text: 1.7. */
     line-height: 1.7;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .progress-note > a. */
   .progress-note > a {
-    /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .page-footer. */
   .page-footer {
-    /* Set space inside this element: 24px 18px. */
     padding: 24px 18px;
-    /* Set the text size: 8px. */
     font-size: 8px;
     /* Distribute children along the main axis: center. */
     justify-content: center;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .page-footer > span:last-child. */
   .page-footer > span:last-child {
     /* Choose the layout mode or hide the element: none. */
     display: none;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .modal. */
   .modal {
     /* Set space inside this element: 24px 21px. */
     padding: 24px 21px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .modal-heading h2. */
   .modal-heading h2 {
     /* Set the text size: 23px. */
     font-size: 23px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .toast. */
   .toast {
     /* Set the element width: max-content. */
     width: max-content;
-    /* Set the text size: 10px. */
     font-size: 10px;
-    /* Set space inside this element: 13px. */
     padding: 13px;
     /* Set the bottom positioning offset: 17px. */
     bottom: 17px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .toast button. */
   .toast button {
     /* Set outer space on the left: 3px. */
     margin-left: 3px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .empty-state. */
   .empty-state {
     /* Set space inside this element: 38px 17px. */
     padding: 38px 17px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .empty-state h3. */
   .empty-state h3 {
     /* Set the text size: 16px. */
     font-size: 16px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .empty-state p. */
   .empty-state p {
     /* Set the text size: 10px. */
     font-size: 10px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .back-link. */
   .back-link {
     /* Set outer space below the element: 28px. */
     margin-bottom: 28px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .detail-title-row. */
   .detail-title-row {
     /* Arrange flex items horizontally or vertically: column. */
     flex-direction: column;
-    /* Set the spacing between layout items: 18px. */
     gap: 18px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .detail-title-row h1. */
   .detail-title-row h1 {
-    /* Set the text size: 29px. */
     font-size: 29px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .detail-title-row .button. */
   .detail-title-row .button {
-    /* Reserve at least this much height: 35px. */
     min-height: 35px;
-    /* Set space inside this element: 9px 12px. */
     padding: 9px 12px;
     /* Set the text size: 10px. */
     font-size: 10px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .detail-grid. */
   .detail-grid {
     /* Define the widths of grid columns: 1fr. */
     grid-template-columns: 1fr;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .detail-complete. */
   .detail-complete {
     /* Set space outside this element: 17px. */
     margin: 17px;
-    /* Set the element width: calc(100% - 34px). */
     width: calc(100% - 34px);
-    /* Set space inside this element: 18px 14px. */
     padding: 18px 14px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .description-section. */
   .description-section {
-    /* Set space inside this element: 15px 22px 26px. */
     padding: 15px 22px 26px;
-    /* Reserve at least this much height: 190px. */
     min-height: 190px;
-    /* Finish this style rule or responsive block. */
   }
   /* Style elements matching .properties dl. */
   .properties dl {
-    /* Choose the layout mode or hide the element: grid. */
     display: grid;
-    /* Define the widths of grid columns: repeat(2, 1fr). */
     grid-template-columns: repeat(2, 1fr);
     /* Set the spacing between layout items: 17px 20px. */
     gap: 17px 20px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .properties dl > div. */
   .properties dl > div {
     /* Arrange flex items horizontally or vertically: column. */
     flex-direction: column;
-    /* Align children across the layout’s cross axis: flex-start. */
     align-items: flex-start;
-    /* Set space outside this element: 0. */
     margin: 0;
     /* Set the spacing between layout items: 9px. */
     gap: 9px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .properties dd. */
   .properties dd {
     /* Align inline text within its container: left. */
     text-align: left;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .properties dd.date-property. */
   .properties dd.date-property {
     /* Limit how wide this element can grow: 140px. */
     max-width: 140px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Style elements matching .detail-encouragement. */
   .detail-encouragement {
     /* Set space outside this element: 35px 0 20px. */
     margin: 35px 0 20px;
-    /* Finish this style rule or responsive block. */
   }
-  /* Finish this style rule or responsive block. */
 }
 /* Apply these overrides only when (prefers-reduced-motion: reduce). */
 @media (prefers-reduced-motion: reduce) {
-  /* Include * in this group of selectors. */
   *,
-  /* Include *::before in this group of selectors. */
   *::before,
   /* Style elements matching *::after. */
   *::after {
-    /* Set the animation duration: 0.01ms !important. */
     animation-duration: 0.01ms !important;
-    /* Set the transition duration: 0.01ms !important. */
     transition-duration: 0.01ms !important;
-    /* Finish this style rule or responsive block. */
   }
-  /* Finish this style rule or responsive block. */
 }
 /* Apply these overrides only when (hover: none). */
 @media (hover: none) {
-  /* Style elements matching .row-actions .icon-button:not(.open-task). */
   .row-actions .icon-button:not(.open-task) {
-    /* Set the element transparency: 1. */
     opacity: 1;
-    /* Finish this style rule or responsive block. */
   }
-  /* Finish this style rule or responsive block. */
 }

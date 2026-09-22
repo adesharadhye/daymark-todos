@@ -1,48 +1,33 @@
 # Name the workflow shown in the GitHub Actions interface.
 name: Checks
 
-# Select the repository events that trigger these checks.
 on:
-  # Run checks whenever commits are pushed.
   push:
   # Run checks for proposed pull-request changes.
   pull_request:
 
-# Define the jobs performed by this workflow.
 jobs:
-  # Give the verification job a stable identifier.
   check:
     # Use a clean GitHub-hosted Ubuntu runner.
     runs-on: ubuntu-latest
-    # Execute the following steps in order.
     steps:
-      # Check out this commit so the runner can read the application.
       - uses: actions/checkout@v4
       # Install the required Node.js runtime and configure npm caching.
       - uses: actions/setup-node@v4
-        # Supply inputs to the action immediately above.
         with:
-          # Use Node 24, which provides the built-in SQLite API.
           node-version: 24
           # Cache npm package downloads using the dependency lockfile.
           cache: npm
-      # Install the exact dependency versions recorded in package-lock.json.
       - run: npm ci
-      # Check formatting, run API tests, type-check, and build both pages and the server.
       - run: npm run check
       # Install Chromium and its Linux system libraries for browser tests.
       - run: npx playwright install --with-deps chromium
-      # Run full browser workflows against an isolated production server and database.
       - run: npm run test:e2e
-      # Save browser reports for investigating a failed CI run.
       - uses: actions/upload-artifact@v4
         # Upload diagnostic reports only when an earlier step failed.
         if: failure()
-        # Supply inputs to the action immediately above.
         with:
-          # Give the uploaded diagnostic bundle a recognizable name.
           name: playwright-report
           # Collect the generated Playwright HTML report.
           path: playwright-report/
-          # Delete uploaded diagnostics automatically after seven days.
           retention-days: 7

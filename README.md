@@ -44,7 +44,7 @@ Open **http://127.0.0.1:3001**. Express serves both built HTML pages, their asse
 
 Every implemented feature and its behavior is documented in [FEATURES.md](docs/FEATURES.md). API schemas, errors, and examples are in [API.md](docs/API.md). Design decisions and the code organization are in [ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
-The handwritten source includes line-by-line explanatory comments. [CODE_GUIDE.md](docs/CODE_GUIDE.md) gives a reading order and explains strict JSON configuration and request-body fields that cannot contain inline comments. Generated files and installed dependencies remain unchanged.
+The handwritten source uses short explanatory comments spaced roughly every 2–3 lines of code. [CODE_GUIDE.md](docs/CODE_GUIDE.md) gives a reading order and explains strict JSON configuration and request-body fields that cannot contain inline comments. Generated files and installed dependencies remain unchanged.
 
 ## Why this is an MPA
 
