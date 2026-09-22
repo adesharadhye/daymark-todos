@@ -129,8 +129,6 @@ export function Shell({
       {/* Render the footer element. */}
       <footer className="page-footer">
         {/* Render the span element. */}
-        <span>Keep it simple.</span>
-        {/* Render the span element. */}
         <span>Made for daily focus</span>
         {/* Finish the footer element. */}
       </footer>

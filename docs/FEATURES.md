@@ -66,5 +66,3 @@ Optional sample data is explicit: `npm run seed` appends eight example tasks onc
 ## Limits
 
 This is a single-user application. There are no accounts, authentication, team workspaces, custom projects, recurring tasks, reminders, attachments, or offline sync. Deletion has no undo. There is no pagination, and the UI loads the collection into memory. Two tabs can read and change the same data, but changes are not pushed to other tabs automatically; reload to see external changes.
-
-The project and priority model, date-based views, and search were inspired by [Todoist's task-management features](https://www.todoist.com/task-management).
