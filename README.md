@@ -88,7 +88,3 @@ GitHub Actions runs formatting and type checks, backend tests, the production bu
 ## Scope
 
 Daymark is a single-user challenge application. It has no accounts, authentication, team sharing, reminders, recurring tasks, or offline synchronization. Anyone with access to its API can read and change its tasks. The default server binds to localhost.
-
-## References
-
-Task organization ideas were informed by [Todoist's task management overview](https://www.todoist.com/task-management). The implementation follows [Vite's multiple-page build guidance](https://vite.dev/guide/build#multi-page-app) and uses [Node.js's built-in SQLite API](https://nodejs.org/api/sqlite.html).
