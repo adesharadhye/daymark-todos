@@ -1,4 +1,8 @@
+# Detect text files automatically and keep consistent LF line endings across platforms.
 * text=auto eol=lf
+# Treat PNG images as binary data, without line-ending conversion.
 *.png binary
+# Treat JPEG images as binary data, without line-ending conversion.
 *.jpg binary
+# Treat compressed font files as binary data.
 *.woff2 binary

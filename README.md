@@ -44,6 +44,8 @@ Open **http://127.0.0.1:3001**. Express serves both built HTML pages, their asse
 
 Every implemented feature and its behavior is documented in [FEATURES.md](docs/FEATURES.md). API schemas, errors, and examples are in [API.md](docs/API.md). Design decisions and the code organization are in [ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
+The handwritten source includes line-by-line explanatory comments. [CODE_GUIDE.md](docs/CODE_GUIDE.md) gives a reading order and explains strict JSON configuration and request-body fields that cannot contain inline comments. Generated files and installed dependencies remain unchanged.
+
 ## Why this is an MPA
 
 `client/index.html` and `client/todo.html` are separate Vite build inputs, each mounting its own React entry point. A task link performs a normal browser navigation to `todo.html?id=...`; the detail page reads the query parameter and requests that task from the API. There is no client-side router or universal HTML fallback. Refreshing a detail URL works directly.

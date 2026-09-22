@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="18" fill="#303d32"/><path d="m17 33 10 10 21-23" fill="none" stroke="#dce6bc" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<!-- Define a scalable 64-by-64 icon in the SVG namespace. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<!-- Draw the rounded green background using its size, corner radius, and fill color. -->
+<rect width="64" height="64" rx="18" fill="#303d32"/>
+<!-- Draw the checkmark; d defines its points, stroke styles its line, and fill=none keeps it hollow. -->
+<path d="m17 33 10 10 21-23" fill="none" stroke="#dce6bc" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- Finish the vector icon. -->
+</svg>

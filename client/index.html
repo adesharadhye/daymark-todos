@@ -1,18 +1,33 @@
+<!-- Use HTML5 document parsing. -->
 <!doctype html>
+<!-- Declare English as the document language for browsers and screen readers. -->
 <html lang="en">
+  <!-- Begin metadata that configures the page rather than rendering its main content. -->
   <head>
+    <!-- Decode this document as UTF-8 so punctuation and symbols render correctly. -->
     <meta charset="UTF-8" />
+    <!-- Match the layout width to the device and start at normal zoom for responsive rendering. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Suggest a browser toolbar color matching the application. -->
     <meta name="theme-color" content="#303d32" />
+    <!-- name identifies the page-description metadata; content supplies the short summary used by browsers and search engines. -->
     <meta
       name="description"
       content="Daymark — a little space to organize your day. Plan, prioritize, and make progress on what matters."
     />
+    <!-- rel selects the favicon; type identifies SVG; href loads the handwritten icon from the public directory. -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Set the browser-tab title; the detail page later replaces it with the task title. -->
     <title>My tasks · Daymark</title>
+    <!-- Close the head element. -->
   </head>
+  <!-- Begin the visible document content. -->
   <body>
+    <!-- Provide the DOM container into which this page mounts its React tree. -->
     <div id="root"></div>
+    <!-- type=module enables imports; src loads this document’s list React entry point. -->
     <script type="module" src="/src/list.tsx"></script>
+    <!-- Close the body element. -->
   </body>
+  <!-- Close the html element. -->
 </html>
